@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 import Tracker from "../components/Tracker";
+import Calculator from "../components/Calculator";
 
 function CombatTracker(){
 return(
@@ -8,16 +9,20 @@ return(
     
   <Container className="containerStyle">
     <br/>
-  <Row>
-      <Col className="portHead">
-        <h1>Combat Tracker</h1>
+  <Row className="justify-content-md-center text-center" >
+    <h1>Combat Tracker</h1>
+      <Col>
+        <Tracker />
       </Col>
-    </Row>
+      <Col>
+        <h1>Conditions</h1>
+      </Col>
+  </Row>
     <br/>
 
-    <Row className="justify-content-md-center botRow">
+    <Row className="justify-content-md-center">
       <Col className="md-auto botCol text-center">
-        <Tracker />
+        <Calculator />
       </Col>
     </Row>
   </Container>
