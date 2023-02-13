@@ -12,6 +12,11 @@ export const ACTIONS = {
     TOGGLE_FRIGHTENED:    'toggle-frightened',
     TOGGLE_GRAPPLE:    'toggle-grapple',
     TOGGLE_INCAPACITATED:    'toggle-incapacitated',
+    TOGGLE_INVISIBLE:    'toggle-invisible',
+    TOGGLE_PARALYZED:    'toggle-paralyzed',
+    TOGGLE_PETRIFIED:    'toggle-petrified',
+    TOGGLE_POISONED:    'toggle-poisoned',
+    TOGGLE_PRONE:    'toggle-prone',
     REMOVE_CHARACTER: 'remove-character',
   }
 
@@ -68,6 +73,45 @@ export const ACTIONS = {
                 }
                 return character
             })
+            case ACTIONS.TOGGLE_INVISIBLE:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, invisible: !character.invisible }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_PARALYZED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, paralyzed: !character.paralyzed }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_PETRIFIED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, petrified: !character.petrified }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_POISONED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, poisoned: !character.poisoned }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_PRONE:
+                return characters.map(character =>{
+                    if (character.id === action.payload.id){
+                        return{ ...character, prone: !character.prone }
+                    }
+                    return character
+                })
+
+
+
+
         case ACTIONS.REMOVE_CHARACTER:
             return characters.filter(character => character.id !== action.payload.id)
             default:
