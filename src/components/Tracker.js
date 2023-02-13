@@ -6,7 +6,13 @@ import Character from "./Character";
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
     TOGGLE_DEATH: 'toggle-death',
-    CLEAR: 'clear',
+    TOGGLE_BLIND: 'toggle-blind',
+    TOGGLE_CHARMED: 'toggle-charmed',
+    TOGGLE_DEAF:    'toggle-deaf',
+    TOGGLE_FRIGHTENED:    'toggle-frightened',
+    TOGGLE_GRAPPLE:    'toggle-grapple',
+    TOGGLE_INCAPACITATED:    'toggle-incapacitated',
+    REMOVE_CHARACTER: 'remove-character',
   }
 
   function reducer(characters, action){
@@ -20,11 +26,57 @@ export const ACTIONS = {
                 }
                 return character
             })
+            case ACTIONS.TOGGLE_BLIND:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, blinded: !character.blinded }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_CHARMED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, charmed: !character.charmed }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_DEAF:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, deafened: !character.deafened }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_FRIGHTENED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, frightened: !character.frightened }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_GRAPPLE:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, grappled: !character.grappled }
+                }
+                return character
+            })
+            case ACTIONS.TOGGLE_INCAPACITATED:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, incapacitated: !character.incapacitated }
+                }
+                return character
+            })
+        case ACTIONS.REMOVE_CHARACTER:
+            return characters.filter(character => character.id !== action.payload.id)
+            default:
+                return characters
     }
   }
 
   function newCharacter(name){
-    return { id:Date.now(), name: name, dead: false}
+    return { id:Date.now(), name: name, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
   }
 
 
