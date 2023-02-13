@@ -1,9 +1,11 @@
 import React from "react";
 import {Row, Col} from 'react-bootstrap';
 import { useReducer, useState } from "react";
+import Character from "./Character";
 
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
+    TOGGLE_DEATH: 'toggle-death',
     CLEAR: 'clear',
   }
 
@@ -11,6 +13,13 @@ export const ACTIONS = {
     switch (action.type){
         case ACTIONS.ADD_CHARACTER:
             return[...characters, newCharacter(action.payload.name)]
+        case ACTIONS.TOGGLE_DEATH:
+            return characters.map(character =>{
+                if (character.id === action.payload.id){
+                    return{ ...character, dead: !character.dead }
+                }
+                return character
+            })
     }
   }
 
@@ -40,6 +49,9 @@ console.log(characters)
                 <input type="text" value={name} onChange={e => setName
                 (e.target.value)} />
             </form>
+            {characters.map(character => {
+               return <Character key={character.id} character={character} dispatch={ dispatch }/>
+            })}
         </Col>
     </Row>
   )
