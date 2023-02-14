@@ -4,7 +4,7 @@ import { ACTIONS } from './Tracker'
 export default function Character({ character, dispatch}) {
   return (
     <div>
-        <span style={{ color: character.dead ? '#AAA' : '#000' }}>
+        <span className='charName' style={{ textDecoration: character.dead ? 'line-through' : '', color: character.unconscious ? '#AAA' : '#000' }}  onClick={()=> dispatch({ type: ACTIONS.TOGGLE_DEATH, payload:{ id: character.id }})}>
             {character.name}
         </span>
         <button style={{ color: character.blinded ? '#AAA' : '', background: character.blinded ? '#CCFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_BLIND, payload:{ id: character.id }})}>Blind</button>
@@ -17,9 +17,10 @@ export default function Character({ character, dispatch}) {
         <button style={{ color: character.paralyzed ? '' : '', background: character.paralyzed ? '#99FF33' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_PARALYZED, payload:{ id: character.id }})}>Paralyzed</button>
         <button style={{ color: character.petrified ? '#FFFFFF' : '', background: character.petrified ? '#606060' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_PETRIFIED, payload:{ id: character.id }})}>Petrified</button>
         <button style={{ color: character.poisoned ? '#FFFFFF' : '', background: character.poisoned ? '#336600' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_POISONED, payload:{ id: character.id }})}>Poisoned</button>
-        <button style={{ color: character.prone ? '#FFFFFF' : '', background: character.prone ? '#660033' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_PRONE, payload:{ id: character.id }})}>Prone</button>
-
-        <button style={{ color: character.dead ? '#AAA' : '', background: character.dead ? '#000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_DEATH, payload:{ id: character.id }})}>Dead</button>
+        <button style={{ color: character.prone ? '#FFFFFF' : '', background: character.prone ? '#CC0000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_PRONE, payload:{ id: character.id }})}>Prone</button>
+        <button style={{ color: character.restrained ? '#FFFFFF' : '', background: character.restrained ? '#000099' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_RESTRAINED, payload:{ id: character.id }})}>Restrained</button>
+        <button style={{ color: character.stunned ? '#FFFFFF' : '', background: character.stunned ? '#FF8000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_STUN, payload:{ id: character.id }})}>Stunned</button>
+        <button style={{ color: character.unconscious ? '#AAA' : '', background: character.unconscious ? '#000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_UNCONSCIOUS, payload:{ id: character.id }})}>Unconscious</button>
         <button onClick={()=> dispatch({ type: ACTIONS.REMOVE_CHARACTER, payload:{ id: character.id }})}>Remove</button>
     </div>
   )

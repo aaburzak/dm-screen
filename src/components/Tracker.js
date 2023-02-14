@@ -17,6 +17,9 @@ export const ACTIONS = {
     TOGGLE_PETRIFIED:    'toggle-petrified',
     TOGGLE_POISONED:    'toggle-poisoned',
     TOGGLE_PRONE:    'toggle-prone',
+    TOGGLE_RESTRAINED:    'toggle-restrained',
+    TOGGLE_STUN: 'toggle-stun',
+    TOGGLE_UNCONSCIOUS: 'toggle-unconscious',
     REMOVE_CHARACTER: 'remove-character',
   }
 
@@ -108,7 +111,27 @@ export const ACTIONS = {
                     }
                     return character
                 })
-
+                case ACTIONS.TOGGLE_RESTRAINED:
+                    return characters.map(character =>{
+                        if (character.id === action.payload.id){
+                            return{ ...character, restrained: !character.restrained }
+                        }
+                        return character
+                    })
+                case ACTIONS.TOGGLE_STUN:
+                    return characters.map(character =>{
+                        if (character.id === action.payload.id){
+                            return{ ...character, stunned: !character.stunned }
+                        }
+                        return character
+                    })
+                case ACTIONS.TOGGLE_UNCONSCIOUS:
+                    return characters.map(character =>{
+                        if (character.id === action.payload.id){
+                            return{ ...character, unconscious: !character.unconscious }
+                        }
+                        return character
+                    })
 
 
 
