@@ -58,3 +58,22 @@ body {
 .charName:hover {
     cursor: pointer;
 }
+
+
+
+.condition-btn-box > button{
+    border-radius: 25px;
+    margin: 2px;
+}
+
+.remove-btn {
+    border-radius: 25px;
+    margin-top: 1rem;
+    max-width: fit-content;
+}
+
+.border{
+    border: solid;
+    margin: 1rem;
+    padding: 1rem;
+}

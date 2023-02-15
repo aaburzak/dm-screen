@@ -1,12 +1,20 @@
 import React from 'react'
 import { ACTIONS } from './Tracker'
+import {Container, Row, Col} from 'react-bootstrap';
 
 export default function Character({ character, dispatch}) {
   return (
-    <div>
-        <span className='charName' style={{ textDecoration: character.dead ? 'line-through' : '', color: character.unconscious ? '#AAA' : '#000' }}  onClick={()=> dispatch({ type: ACTIONS.TOGGLE_DEATH, payload:{ id: character.id }})}>
+    <Container className="border">
+      <Row>
+        <Col>
+        <h3 className='charName' style={{ textDecoration: character.dead ? 'line-through' : '', color: character.unconscious ? '#AAA' : '#000' }}  onClick={()=> dispatch({ type: ACTIONS.TOGGLE_DEATH, payload:{ id: character.id }})}>
             {character.name}
-        </span>
+        </h3>
+        </Col>
+        </Row>
+        <Row>
+        <Col>
+        <div className='condition-btn-box'>
         <button style={{ color: character.blinded ? '#AAA' : '', background: character.blinded ? '#CCFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_BLIND, payload:{ id: character.id }})}>Blind</button>
         <button style={{ color: character.charmed ? '#FFFFFF' : '', background: character.charmed ? '#FF99CC' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_CHARMED, payload:{ id: character.id }})}>Charmed</button>
         <button style={{ color: character.deafened ? '' : '', background: character.deafened ? '#FFCC99' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_DEAF, payload:{ id: character.id }})}>Deaf</button>
@@ -21,7 +29,14 @@ export default function Character({ character, dispatch}) {
         <button style={{ color: character.restrained ? '#FFFFFF' : '', background: character.restrained ? '#000099' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_RESTRAINED, payload:{ id: character.id }})}>Restrained</button>
         <button style={{ color: character.stunned ? '#FFFFFF' : '', background: character.stunned ? '#FF8000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_STUN, payload:{ id: character.id }})}>Stunned</button>
         <button style={{ color: character.unconscious ? '#AAA' : '', background: character.unconscious ? '#000' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_UNCONSCIOUS, payload:{ id: character.id }})}>Unconscious</button>
-        <button onClick={()=> dispatch({ type: ACTIONS.REMOVE_CHARACTER, payload:{ id: character.id }})}>Remove</button>
-    </div>
+        </div>
+      </Col>
+      </Row>
+      <Row>
+      <Col>
+      <button className ="remove-btn" onClick={()=> dispatch({ type: ACTIONS.REMOVE_CHARACTER, payload:{ id: character.id }})}>Remove Character</button>
+      </Col>
+      </Row>
+    </Container>
   )
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import Character from "./Character";
 
@@ -161,18 +161,23 @@ function Tracker() {
 console.log(characters)
 
   return (
-    <Row className="justify-content-md-center botRow">
-        <h3>Add Character</h3>
-        <Col className="md-auto botCol text-center">
-            <form onSubmit={handleSubmit}>
-                <input type="text" value={name} onChange={e => setName
-                (e.target.value)} />
-            </form>
+    <Container>
+        <Row className="justify-content-md-center botRow">
+            <h3>Add Character</h3>
+            <Col className="md-auto botCol text-center">
+                <form onSubmit={handleSubmit}>
+                    <input type="text" value={name} onChange={e => setName
+                    (e.target.value)} />
+                </form>
+            </Col>
+        </Row>
             {characters.map(character => {
-               return <Character key={character.id} character={character} dispatch={ dispatch }/>
+                return <Character key={character.id} character={character} dispatch={ dispatch }/>
             })}
-        </Col>
-    </Row>
+        <Row>
+
+        </Row>
+    </Container>
   )
 }
 
