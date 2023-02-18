@@ -20,6 +20,7 @@ export const ACTIONS = {
     TOGGLE_RESTRAINED:    'toggle-restrained',
     TOGGLE_STUN: 'toggle-stun',
     TOGGLE_UNCONSCIOUS: 'toggle-unconscious',
+    TOGGLE_TURN: 'toggle-turn',
     REMOVE_CHARACTER: 'remove-character',
   }
 
@@ -129,6 +130,13 @@ export const ACTIONS = {
                     return characters.map(character =>{
                         if (character.id === action.payload.id){
                             return{ ...character, unconscious: !character.unconscious }
+                        }
+                        return character
+                    })
+                    case ACTIONS.TOGGLE_TURN:
+                    return characters.map(character =>{
+                        if (character.id === action.payload.id){
+                            return{ ...character, turn : !character.turn }
                         }
                         return character
                     })
