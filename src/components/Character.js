@@ -1,8 +1,18 @@
 import React from 'react'
+import { useState } from "react";
 import { ACTIONS } from './Tracker'
 import {Container, Row, Col} from 'react-bootstrap';
 
 export default function Character({ character, dispatch}) {
+
+  const [health, setHealth] = useState('')
+
+  function handleSubmitAdd(e) {
+      e.preventDefault()
+      dispatch({type: ACTIONS.ADD_HEALTH, payload: {health: health}})
+      setHealth('')
+  }
+
   return (
     <Container className="char-card"  style={{background: character.turn ? 'linear-gradient(to left, #e6eaec, #00ADB5)': '', border: character.turn ? '2px solid #00ADB5' : '', boxShadow: character.turn ? 'inset 0px 0px 8px #00ADB5, 0 0 15px #00ADB5' : ''}}>
       <Row>
@@ -10,6 +20,14 @@ export default function Character({ character, dispatch}) {
         <h4 style={{ textDecoration: character.unconscious ? 'line-through' : ''}}>
             {character.name}
         </h4>
+        </Col>
+        <Col>
+        <h4>HP = {character.health}</h4>
+        +   <form onSubmit={handleSubmitAdd}>
+                    <input type="number" value={health} onChange={e => setHealth
+                    (e.target.value)} />
+                </form>
+        - <form></form>
         </Col>
         </Row>
         <Row>

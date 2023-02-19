@@ -5,6 +5,7 @@ import Character from "./Character";
 
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
+    ADD_HEALTH: 'add-health',
     TOGGLE_DEATH: 'toggle-death',
     TOGGLE_BLIND: 'toggle-blind',
     TOGGLE_CHARMED: 'toggle-charmed',
@@ -28,6 +29,15 @@ export const ACTIONS = {
     switch (action.type){
         case ACTIONS.ADD_CHARACTER:
             return[...characters, newCharacter(action.payload.name)]
+
+        // case ACTIONS.ADD_HEALTH:
+        //     return characters.map(character =>{
+        //         if (character.id === action.payload.id){
+        //             return{ ...character.health + action.payload.health }
+        //         }
+        //         return character
+        //     })
+
         case ACTIONS.TOGGLE_DEATH:
             return characters.map(character =>{
                 if (character.id === action.payload.id){
@@ -151,7 +161,7 @@ export const ACTIONS = {
   }
 
   function newCharacter(name){
-    return { id:Date.now(), name: name, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
+    return { id:Date.now(), name: name, health: 0, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
   }
 
 
