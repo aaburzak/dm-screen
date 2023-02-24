@@ -5,7 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 export default function Character({ character, dispatch}) {
 
-  const [health, setHealth] = useState('')
+  const [health, setHealth] = useState(0)
 
   function handleSubmitAdd(e) {
       e.preventDefault()
@@ -26,7 +26,7 @@ export default function Character({ character, dispatch}) {
         <Col>
         <h4>HP = {character.health}</h4>
         +   <form onSubmit={handleSubmitAdd}>
-                    <input type="number" value={health} onChange={e => setHealth
+                    <input type="number"  onChange={e => setHealth
                     (e.target.value)} />
                 </form>
         - 
