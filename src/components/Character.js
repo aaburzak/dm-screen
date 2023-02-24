@@ -10,7 +10,9 @@ export default function Character({ character, dispatch}) {
   function handleSubmitAdd(e) {
       e.preventDefault()
       dispatch({type: ACTIONS.ADD_HEALTH, payload: {health: health}})
-      setHealth('')
+      setHealth(
+        character.health = character.health - (health*-1)
+        )
   }
 
   return (
@@ -27,7 +29,7 @@ export default function Character({ character, dispatch}) {
                     <input type="number" value={health} onChange={e => setHealth
                     (e.target.value)} />
                 </form>
-        - <form></form>
+        - 
         </Col>
         </Row>
         <Row>

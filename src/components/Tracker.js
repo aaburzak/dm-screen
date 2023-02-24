@@ -31,12 +31,7 @@ export const ACTIONS = {
             return[...characters, newCharacter(action.payload.name)]
 
         // case ACTIONS.ADD_HEALTH:
-        //     return characters.map(character =>{
-        //         if (character.id === action.payload.id){
-        //             return{ ...character.health + action.payload.health }
-        //         }
-        //         return character
-        //     })
+        //     return[...characters, newHealth(action.payload.health)]
 
         case ACTIONS.TOGGLE_DEATH:
             return characters.map(character =>{
@@ -163,6 +158,8 @@ export const ACTIONS = {
   function newCharacter(name){
     return { id:Date.now(), name: name, health: 0, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
   }
+
+
 
 
 function Tracker() {
