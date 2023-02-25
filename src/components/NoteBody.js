@@ -8,8 +8,10 @@ export default function NoteBody({note, dispatch}) {
     <Container>
         <Row>
             <Col>
-                <p>{note.text}</p>
+            <p className='other-note'>{note.text}</p>
             </Col>
+            
+            
         </Row>
         <Row>
       <Col>

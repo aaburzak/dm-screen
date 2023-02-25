@@ -28,6 +28,7 @@ const [health, setHealth] = useState(0)
         <h4 style={{ textDecoration: character.unconscious ? 'line-through' : ''}}>
             {character.name}
         </h4>
+        <button className="turn-btn" style={{ color: character.turn ? '#FFFFFF' : '', background: character.turn ? '#00ADB5': '', border: character.turn ? 'none' : '', boxShadow: character.turn ? 'inset 0px 0px 8px #FFFFFF, 0 0 15px #FFFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_TURN, payload:{ id: character.id }})}>Turn</button>
         </Col>
         <Col>
         <h4>HP = {character.health}</h4>
@@ -38,11 +39,7 @@ const [health, setHealth] = useState(0)
         - 
         </Col>
         </Row>
-        <Row>
-      <Col>
-        <button className="turn-btn" style={{ color: character.turn ? '#FFFFFF' : '', background: character.turn ? '#00ADB5': '', border: character.turn ? 'none' : '', boxShadow: character.turn ? 'inset 0px 0px 8px #FFFFFF, 0 0 15px #FFFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_TURN, payload:{ id: character.id }})}>Turn</button>
-      </Col>
-      </Row>
+      
         <Row>
         <Col>
         <div className='condition-btn-box'>
@@ -65,8 +62,9 @@ const [health, setHealth] = useState(0)
       </Row>
 
       <Row>
-          <h5>Other Notes</h5>
+          <h5 className='other-note'>Other Notes</h5>
       </Row>
+      
       <Row>
         <Note/>
       </Row>

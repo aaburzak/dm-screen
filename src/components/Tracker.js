@@ -4,6 +4,7 @@ import { useReducer, useState } from "react";
 import Character from "./Character";
 
 
+
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
     ADD_HEALTH: 'add-health',
@@ -180,10 +181,10 @@ function Tracker() {
 
   return (
     <Container>
-        <Row className="justify-content-md-center botRow">
+        <Row className="justify-content-md-center">
             <h3>Add Character</h3>
             <Col className="md-auto text-center">
-                <form onSubmit={handleSubmit}>
+            <form className="name-form" onSubmit={handleSubmit}>
                     <input type="text" value={name} onChange={e => setName
                     (e.target.value)} />
                 </form>
