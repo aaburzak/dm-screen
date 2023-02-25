@@ -1,11 +1,17 @@
 import React from 'react'
-import { useState } from "react";
-import { ACTIONS } from './Tracker'
+import { useState, } from "react";
+import { ACTIONS } from './Tracker';
+import Note from './Note';
 import {Container, Row, Col} from 'react-bootstrap';
+
+
+
+
+
 
 export default function Character({ character, dispatch}) {
 
-  const [health, setHealth] = useState(0)
+const [health, setHealth] = useState(0)
 
   function handleSubmitAdd(e) {
       e.preventDefault()
@@ -57,6 +63,14 @@ export default function Character({ character, dispatch}) {
         </div>
       </Col>
       </Row>
+
+      <Row>
+          <h5>Other Notes</h5>
+      </Row>
+      <Row>
+        <Note/>
+      </Row>
+
       <Row>
       <Col>
       <button className ="remove-btn" onClick={()=> dispatch({ type: ACTIONS.REMOVE_CHARACTER, payload:{ id: character.id }})}>Remove Character</button>

@@ -3,6 +3,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import Character from "./Character";
 
+
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
     ADD_HEALTH: 'add-health',
@@ -29,6 +30,7 @@ export const ACTIONS = {
     switch (action.type){
         case ACTIONS.ADD_CHARACTER:
             return[...characters, newCharacter(action.payload.name)]
+
 
         // case ACTIONS.ADD_HEALTH:
         //     return[...characters, newHealth(action.payload.health)]
@@ -162,6 +164,7 @@ export const ACTIONS = {
 
 
 
+
 function Tracker() {
     const [characters, dispatch] = useReducer(reducer,[])
     const [name, setName] = useState('')
@@ -173,13 +176,13 @@ function Tracker() {
     }
 
 
-console.log(characters)
+// console.log(characters)
 
   return (
     <Container>
         <Row className="justify-content-md-center botRow">
             <h3>Add Character</h3>
-            <Col className="md-auto botCol text-center">
+            <Col className="md-auto text-center">
                 <form onSubmit={handleSubmit}>
                     <input type="text" value={name} onChange={e => setName
                     (e.target.value)} />
