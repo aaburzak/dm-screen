@@ -41,7 +41,7 @@ return(
       <Col>
         <h1>Conditions</h1>
         
-        <Accordion defaultActiveKey="0">
+        <Accordion>
       <Card>
         <Card.Header style={{backgroundColor: '#CCFFFF'}}>
           <CustomToggle eventKey="0">Blinded</CustomToggle>
@@ -141,6 +141,195 @@ return(
           <ul>
               <li>
               An incapacitated creature can’t take actions or reactions.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      
+      <Card>
+        <Card.Header style={{backgroundColor: '#FFFFFF'}}>
+          <CustomToggle eventKey="6">Invisible</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="6">
+          <Card.Body>
+          <ul>
+              <li>
+              An invisible creature is impossible to see without the aid of magic or a Special sense. For the Purpose of hiding, the creature is heavily obscured. The creature’s Location can be detected by any noise it makes or any tracks it leaves.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have disadvantage, and the creature’s Attack rolls have advantage.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#99FF33'}}>
+          <CustomToggle eventKey="7">Paralyzed</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="7">
+          <Card.Body>
+          <ul>
+              <li>
+                A paralyzed creature is incapacitated (see the condition) and can’t move or speak.
+              </li>
+              <br></br>
+              <li>
+              The creature automatically fails Strength and Dexterity saving throws.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have advantage.
+              </li>
+              <br></br>
+              <li>
+              Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#606060'}}>
+          <CustomToggle eventKey="8">Petrified</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="8">
+          <Card.Body>
+          <ul>
+              <li>
+              A petrified creature is Transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.
+              </li>
+              <br></br>
+              <li>
+              The creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have advantage.
+              </li>
+              <br></br>
+              <li>
+              The creature automatically fails Strength and Dexterity saving throws.
+              </li>
+              <br></br>
+              <li>
+              The creature has resistance to all damage.
+              </li>
+              <br></br>
+              <li>
+              The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#336600'}}>
+          <CustomToggle eventKey="9">Poisoned</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="9">
+          <Card.Body>
+          <ul>
+              <li>
+              A poisoned creature has disadvantage on attack rolls and ability checks.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#CC0000'}}>
+          <CustomToggle eventKey="10">Prone</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="10">
+          <Card.Body>
+          <ul>
+              <li>
+              A prone creature’s only movement option is to crawl, unless it stands up and thereby ends the condition.
+              </li>
+              <br></br>
+              <li>
+              The creature has disadvantage on attack rolls.
+              </li>
+              <br></br>
+              <li>
+              An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the Attack roll has disadvantage.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#000099'}}>
+          <CustomToggle eventKey="11">Restrained</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="11">
+          <Card.Body>
+          <ul>
+              <li>
+              A restrained creature’s speed becomes 0, and it can’t benefit from any bonus to its speed.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have advantage, and the creature’s Attack rolls have disadvantage.
+              </li>
+              <br></br>
+              <li>
+              The creature has disadvantage on Dexterity saving throws.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#FF8000'}}>
+          <CustomToggle eventKey="12">Stunned</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="12">
+          <Card.Body>
+          <ul>
+              <li>
+              A stunned creature is incapacitated (see the condition), can’t move, and can speak only falteringly.
+              </li>
+              <br></br>
+              <li>
+              The creature automatically fails Strength and Dexterity saving throws.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have advantage.
+              </li>
+            </ul>
+          </Card.Body>
+        </Accordion.Collapse>
+      </Card>
+      <Card>
+        <Card.Header style={{backgroundColor: '#000'}}>
+          <CustomToggle eventKey="13">Unconscious</CustomToggle>
+        </Card.Header>
+        <Accordion.Collapse eventKey="13">
+          <Card.Body>
+          <ul>
+              <li>
+              An unconscious creature is incapacitated (see the condition), can’t move or speak, and is unaware of its surroundings.
+              </li>
+              <br></br>
+              <li>
+              The creature drops whatever it’s holding and falls prone.
+              </li>
+              <br></br>
+              <li>
+              The creature automatically fails Strength and Dexterity saving throws.
+              </li>
+              <br></br>
+              <li>
+              Attack rolls against the creature have advantage.
+              </li>
+              <br></br>
+              <li>
+              Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.
               </li>
             </ul>
           </Card.Body>
