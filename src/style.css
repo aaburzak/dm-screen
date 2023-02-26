@@ -4,7 +4,7 @@
 
 body {
     margin: 10rem;
-    background: linear-gradient(to right, #e6eaec, #a93707);
+    background: linear-gradient(to right, #e6eaec, #C0C0C0);
     /* background: radial-gradient( #e6eaec 10%,  #a93707 100%); */
 }
 
@@ -75,6 +75,11 @@ font-size: smaller;
     margin-bottom: 3rem;
 }
 
+.condition-title{
+    /* padding-left: 35%;  */
+    margin-bottom: 2rem;  
+}
+
 .condition-btn-box > button{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -93,7 +98,7 @@ font-size: smaller;
 }
 
 .char-card{
-    border: groove;
+    border: none;
     border-radius: 25px;
     margin: 1rem;
     padding: 1rem;
