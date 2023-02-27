@@ -6,6 +6,7 @@ import "./style.css";
 
 import DmScreen from "./pages/DmScreen";
 import CombatTracker from "./pages/CombatTracker";
+import NotePage from "./pages/NotePage";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
               <Route 
                 path="/combat" 
                 element={<CombatTracker />} 
+              />
+              <Route 
+                path="/notes" 
+                element={<NotePage />} 
               />
             </Routes>
         </div> 
