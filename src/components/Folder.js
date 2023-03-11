@@ -1,5 +1,5 @@
 import React from 'react'
-import { FOLDERACTIONS } from './NotePage';
+import { FOLDER_ACTIONS } from '../pages/NotePage';
 import Note from './Note';
 import {Container, Row, Col} from 'react-bootstrap';
 
@@ -22,7 +22,7 @@ export default function Folder({folder, dispatch}) {
       <Row>
       <Row>
       <Col>
-      <button className ="remove-btn" onClick={()=> dispatch({ type: FOLDERACTIONS.REMOVE_FOLDER, payload:{ id: folder.id }})}>Remove Folder</button>
+      <button className ="remove-btn" onClick={()=> dispatch({ type: FOLDER_ACTIONS.REMOVE_FOLDER, payload:{ id: folder.id }})}>Remove Folder</button>
       </Col>
       </Row>
       </Row>

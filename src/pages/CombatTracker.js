@@ -39,9 +39,9 @@ return(
       </Col>
       <Col>
       <h2 className="condition-title">Conditions</h2>
-        <Accordion style={{boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
+        <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="0">Blinded</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
@@ -59,7 +59,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header  style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header  style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="1">Charmed</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
@@ -77,7 +77,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="2">Deafened</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
@@ -91,7 +91,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="3">Frightened</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="3">
@@ -109,7 +109,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="4">Grappled</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="4">
@@ -131,7 +131,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="5">Incapacitated</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="5">
@@ -146,7 +146,7 @@ return(
       </Card>
       
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="6">Invisible</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="6">
@@ -164,7 +164,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="7">Paralyzed</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="7">
@@ -190,7 +190,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)' , fontSize:'.8rem'}}>
           <CustomToggle eventKey="8">Petrified</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="8">
@@ -224,7 +224,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="9">Poisoned</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="9">
@@ -238,7 +238,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="10">Prone</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="10">
@@ -260,7 +260,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="11">Restrained</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="11">
@@ -282,7 +282,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="12">Stunned</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="12">
@@ -304,7 +304,7 @@ return(
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="13">Unconscious</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="13">
