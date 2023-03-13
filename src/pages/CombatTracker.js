@@ -3,6 +3,7 @@ import { Container, Row, Col} from 'react-bootstrap';
 import Tracker from "../components/Tracker";
 import Calculator from "../components/Calculator";
 import ConditionList from "../components/ConditionList";
+import ActionList from "../components/ActionList";
 
 import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
@@ -38,7 +39,9 @@ return(
       <Col>
         <Tracker />
       </Col>
-  
+      <Col>
+      <ActionList />
+      </Col>
       <Col>
       <ConditionList />
       </Col>

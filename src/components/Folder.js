@@ -12,7 +12,7 @@ export default function Folder({folder, dispatch}) {
             </Col>
         </Row>
         <Row>
-          <h5 className='other-note'>Other Notes</h5>
+          <h5 className='other-note'>Notes</h5>
       </Row>
       
       <Row>
