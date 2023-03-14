@@ -28,7 +28,7 @@ function ActionList() {
     return (
         <Container>
             <Row>
-          <h2 className="condition-title">Actions In Combat</h2>
+          <h3 className="condition-title">Actions In Combat</h3>
           <Col>
             <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
           <Card>

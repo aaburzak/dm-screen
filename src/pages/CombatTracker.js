@@ -4,6 +4,7 @@ import Tracker from "../components/Tracker";
 // import Calculator from "../components/Calculator";
 import ConditionList from "../components/ConditionList";
 import ActionList from "../components/ActionList";
+import CoverList from "../components/CoverList";
 
 // import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
@@ -42,9 +43,14 @@ return(
     <h1 className="title text-center">Combat Tracker</h1>
     
   <Row className="justify-content-md-center text-center">
-  
-      <ActionList />
-  
+    <Col>
+    <ActionList />
+    </Col>
+    </Row>
+    <Row className="justify-content-md-center text-center">
+    <Col>
+    <CoverList/>
+    </Col>  
   </Row>
   <Row className="justify-content-md-center text-center tracker-row" >
       <Col>
@@ -54,6 +60,7 @@ return(
       <Col style={{position: 'relative'}}>
        <div className="sticky">
         <ConditionList/>
+        {/* <CoverList/> */}
         </div>
       </Col>
   </Row>
