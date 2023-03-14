@@ -32,11 +32,11 @@ const [health, setHealth] = useState(0)
         </Col>
         <Col>
         <h4>HP = {character.health}</h4>
-        &#10009;  <form onSubmit={handleSubmitAdd}>
+        <b>&#43;</b> <form onSubmit={handleSubmitAdd}>
                     <input type="number"  onChange={e => setHealth
                     (e.target.value)} />
                 </form>
-        &#9866;
+        <b>&#8722;</b>
         </Col>
         </Row>
       

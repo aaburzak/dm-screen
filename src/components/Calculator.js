@@ -2,6 +2,7 @@ import React from "react";
 import { useReducer } from "react";
 import DigitButton from "./DigitButton";
 import OperationButton from "./OperationButton";
+import {Container, Row, Col} from 'react-bootstrap';
 
 
 export const ACTIONS = {
@@ -145,6 +146,11 @@ function Calculator() {
     
       // dispatch({ type: ACTIONS.ADD_DIGIT, payload: { digit: 1}})
       return (
+        <Container>
+          <Row>
+          <h2 className="condition-title">Calculator</h2>
+            <Col>
+          
         <div className="calculator-grid">
           <div className="output">
             <div className="previous-operand">{formatOperand(previousOperand)} {operation}</div>
@@ -170,6 +176,9 @@ function Calculator() {
       
           <button className="span-two"   onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
         </div>
+        </Col>
+          </Row>
+        </Container>
       )
 
 

@@ -74,6 +74,11 @@ function ActionList() {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+          </Accordion>
+          </Col>
+
+          <Col>
+          <Accordion>
           <Card>
             <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
               <CustomToggle eventKey="3">Disengage</CustomToggle>
@@ -172,6 +177,11 @@ function ActionList() {
               </Card.Body>
             </Accordion.Collapse>
           </Card>
+          </Accordion>
+          </Col>
+
+          <Col>
+          <Accordion>
           <Card>
             <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
               <CustomToggle eventKey="10">Use A Magic Item</CustomToggle>

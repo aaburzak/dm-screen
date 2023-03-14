@@ -66,6 +66,16 @@ body {
 }
 
 
+.tracker-row{
+    margin-top: 2rem;
+}
+
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+}
+
 .name-form{
     margin-top: 1rem;
     margin-bottom: 2rem;
