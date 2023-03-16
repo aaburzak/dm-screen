@@ -40,7 +40,7 @@ return(
   
     
   <Container className="containerStyle">
-    <h1 className="title text-center">Combat Tracker</h1>
+    <h1 className="title text-center">Combat</h1>
     
   <Row className="justify-content-md-center text-center">
     <Col>
