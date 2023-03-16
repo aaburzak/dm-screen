@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Accordion from 'react-bootstrap/Accordion';
+import Table from 'react-bootstrap/Table';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+
+
 
   
 
@@ -25,57 +28,41 @@ function CustomToggle({ children, eventKey }) {
 
 function CoverList() {
   return (
-    <Container>
+    <Container style={{maxWidth: '50%'}}>
     <Row>
-  <h3 className="cover-title">Cover</h3>
+  <h4 className="cover-title">Cover</h4>
+    </Row>
+  
+<Row>
   <Col>
-    <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
-  <Card>
-    <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.6rem'}}>
-      <CustomToggle eventKey="0">1/2</CustomToggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="0">
-      <Card.Body style={{backgroundColor: '#CCFFFF'}}>
-        <ul>
-          <li>
-            +2 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opponent side of the cover.
-          </li>
-        </ul>
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Card.Header  style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.6rem'}}>
-      <CustomToggle eventKey="1">3/4</CustomToggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="1">
-      <Card.Body style={{backgroundColor: '#FF99CC'}}>
-      <ul>
-          <li>
-            +5 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.
-          </li>
-          
-        </ul>
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.6rem'}}>
-      <CustomToggle eventKey="2">Total</CustomToggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="2">
-      <Card.Body style={{backgroundColor: '#FFCC99'}}>
-      <ul>
-          <li>
-            Can't be targeted directly by an attack or a spell.
-          </li>
-        </ul>
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  </Accordion>
+  <Table striped bordered size="sm" variant="dark">
+      <thead>
+        <tr>
+          <th>Cover</th>
+          <th>Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1/2</td>
+          <td colSpan={2}>+2 bonus AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
+          </td>
+        </tr>
+        <tr>
+          <td>3/4</td>
+          <td colSpan={2}>+5 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
+          </td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td colSpan={2}>Can't be targeted directly by an attack or a spell{' '}
+          </td>
+        </tr>
+      </tbody>
+    </Table>
   </Col>
-  </Row>
+</Row>
+
   </Container>
   )
 }

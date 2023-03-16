@@ -5,6 +5,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import Card from 'react-bootstrap/Card';
 
+
+
   
 
 function CustomToggle({ children, eventKey }) {
@@ -237,6 +239,71 @@ function ActionList() {
     
           
           </Row>
+
+{/* 
+          <Row >
+    
+   
+
+
+
+
+    <ListGroup as="ol" horizontal>
+        <ListGroup.Item variant ="dark"
+          as="li"
+          className="d-flex justify-content-center align-items-start"
+        >
+           <Card>
+        <Card.Header>1/2</Card.Header>
+        <Card.Body>
+          <blockquote className="blockquote mb-0">
+            <p>
+              {' '}
+              +2 bonus AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
+            </p>
+          </blockquote>
+        </Card.Body>
+      </Card>
+       
+        </ListGroup.Item>
+        <ListGroup.Item
+          variant ="dark"
+          as="li"
+          className="d-flex justify-content-center align-items-start"
+        >
+          <Card>
+        <Card.Header>3/4</Card.Header>
+        <Card.Body>
+          <blockquote className="blockquote mb-0">
+            <p>
+              {' '}
+              +5 bonus to AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
+            </p>
+          </blockquote>
+        </Card.Body>
+      </Card>
+        </ListGroup.Item>
+        <ListGroup.Item
+        variant ="dark" 
+          as="li"
+          className="d-flex justify-content-center align-items-center" >
+           <Card>
+        <Card.Header>Total</Card.Header>
+        <Card.Body>
+          <blockquote className="blockquote mb-0">
+            <p>
+              {' '}
+              Can't be targeted directly by an attack or a spell{' '}
+            </p>
+          </blockquote>
+        </Card.Body>
+      </Card>
+        </ListGroup.Item>
+      </ListGroup>
+      
+    </Row> */}
+
+
         </Container>
       )
     }
