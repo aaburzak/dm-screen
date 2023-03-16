@@ -109,6 +109,13 @@ font-size: smaller;
     margin-top: 3rem;
 }
 
+.aoe-title{
+    margin-top: 1rem;
+}
+.gnome-pic{
+    max-width: 100%;
+    margin-top: 4rem;
+}
 .condition-btn-box > button{
     padding-left: 1rem;
     padding-right: 1rem;

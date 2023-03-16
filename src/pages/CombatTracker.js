@@ -5,7 +5,7 @@ import Tracker from "../components/Tracker";
 import ConditionList from "../components/ConditionList";
 import ActionList from "../components/ActionList";
 import CoverList from "../components/CoverList";
-
+import GnomePic from "../components/GnomePic";
 // import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 // import Card from 'react-bootstrap/Card';
@@ -54,7 +54,12 @@ return(
     <Row className="justify-content-md-center text-center">
     <Col>
     <CoverList/>
-    </Col>  
+    </Col>
+
+    <Col>
+    {/* <h3 className="aoe-title">Areas Of Effect</h3> */}
+    <GnomePic />
+    </Col>
   </Row>
 
   <h1 className="title combat-title text-center">Combat Tracker</h1>
