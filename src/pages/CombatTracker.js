@@ -46,6 +46,9 @@ return(
     <Col>
     <ActionList />
     </Col>
+    {/* <Col>
+    <CoverList/>
+    </Col>  */}
     </Row>
     <Row className="justify-content-md-center text-center">
     <Col>
@@ -59,8 +62,9 @@ return(
       
       <Col style={{position: 'relative'}}>
        <div className="sticky">
+        
         <ConditionList/>
-        {/* <CoverList/> */}
+      
         </div>
       </Col>
   </Row>
