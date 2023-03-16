@@ -105,6 +105,10 @@ font-size: smaller;
     margin-bottom: 1rem;
 }
 
+.combat-title{
+    margin-top: 3rem;
+}
+
 .condition-btn-box > button{
     padding-left: 1rem;
     padding-right: 1rem;

@@ -14,7 +14,7 @@ function CoverList() {
   return (
     <Container style={{maxWidth: '50%'}}>
     <Row>
-  <h4 className="cover-title">Cover</h4>
+  <h3 className="cover-title">Cover</h3>
     </Row>
   
 <Row>

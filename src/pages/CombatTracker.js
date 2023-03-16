@@ -50,11 +50,14 @@ return(
     <CoverList/>
     </Col>  */}
     </Row>
+    
     <Row className="justify-content-md-center text-center">
     <Col>
     <CoverList/>
     </Col>  
   </Row>
+
+  <h1 className="title combat-title text-center">Combat Tracker</h1>
   <Row className="justify-content-md-center text-center tracker-row" >
       <Col>
         <Tracker />
