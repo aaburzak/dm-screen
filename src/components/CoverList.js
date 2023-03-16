@@ -2,29 +2,13 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import Table from 'react-bootstrap/Table';
-import { useAccordionButton } from 'react-bootstrap/AccordionButton';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
+
+
 
 
 
   
 
-function CustomToggle({ children, eventKey }) {
-  const decoratedOnClick = useAccordionButton(eventKey, () =>
-    console.log('totally custom!'),
-  );
-   return (
-    <button
-      type="button"
-      style={{ background:'linear-gradient(to left, #e6eaec, #C0C0C0)', border: 'outset', borderRadius:'50px', padding:'1rem' }}
-      onClick={decoratedOnClick}
-      
-    >
-      {children}
-    </button>
-  );
-}
 
 function CoverList() {
   return (
