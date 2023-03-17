@@ -52,13 +52,15 @@ return(
     </Row>
     
     <Row className="justify-content-md-center text-center">
-    <Col>
-    <CoverList/>
-    </Col>
-
-    <Col>
-    {/* <h3 className="aoe-title">Areas Of Effect</h3> */}
+      <Col>
     <GnomePic />
+    </Col>
+    <Col >
+    {/* <GnomePic /> */}
+    <CoverList/>
+   
+    {/* <h3 className="aoe-title">Areas Of Effect</h3> */}
+    {/* <GnomePic /> */}
     </Col>
   </Row>
 

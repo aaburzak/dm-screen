@@ -19,8 +19,8 @@ function CoverList() {
   
 <Row>
   <Col>
-  <Table striped bordered size="sm" variant="dark">
-      <thead>
+  <Table striped bordered size="sm" variant="dark" >
+      <thead >
         <tr>
           <th>Cover</th>
           <th>Effect</th>
