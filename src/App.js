@@ -8,6 +8,8 @@ import Header from './components/Header';
 import DmScreen from "./pages/DmScreen";
 import CombatTracker from "./pages/CombatTracker";
 import NotePage from "./pages/NotePage";
+import SpellPage from "./pages/SpellPage";
+import TravelPage from "./pages/TravelPage";
 
 function App() {
   return (
@@ -27,6 +29,14 @@ function App() {
               <Route 
                 path="/notes" 
                 element={<NotePage />} 
+              />
+              <Route 
+                path="/spells" 
+                element={<SpellPage />} 
+              />
+              <Route 
+                path="/travel" 
+                element={<TravelPage />} 
               />
             </Routes>
         </div> 

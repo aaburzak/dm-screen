@@ -91,12 +91,9 @@ font-size: smaller;
 }
 
 
-.title{
-    margin-bottom: 3rem;
-}
+
 
 .condition-title{
-    /* padding-left: 35%;  */
     margin-bottom: 2rem;  
 }
 
@@ -106,7 +103,7 @@ font-size: smaller;
 }
 
 .combat-title{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .aoe-title{

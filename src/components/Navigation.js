@@ -41,6 +41,17 @@ function Navigation() {
             </Navbar.Brand>
             
             <Nav.Link className="navOp" href="/combat">Combat</Nav.Link>
+
+            <Navbar.Brand className="navSpacer" >
+            &#9826;
+            </Navbar.Brand>
+            
+            <Nav.Link className="navOp" href="/spells">Spells</Nav.Link>
+            <Navbar.Brand className="navSpacer" >
+            &#9826;
+            </Navbar.Brand>
+            
+            <Nav.Link className="navOp" href="/travel">Travel</Nav.Link>
           
           </Nav>
             
