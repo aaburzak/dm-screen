@@ -14,12 +14,12 @@ function CoverList() {
   return (
     <Container style={{maxWidth: '50%'}}>
     <Row>
-  <h3 className="cover-title">Cover</h3>
+  <h4 className="cover-title">Cover</h4>
     </Row>
   
 <Row>
-  <Col>
-  <Table striped bordered size="sm" variant="dark" >
+  
+  <Table striped bordered size="sm" variant="dark" style={{fontSize: '.55rem'}}>
       <thead >
         <tr>
           <th>Cover</th>
@@ -44,7 +44,7 @@ function CoverList() {
         </tr>
       </tbody>
     </Table>
-  </Col>
+  
 </Row>
 
   </Container>

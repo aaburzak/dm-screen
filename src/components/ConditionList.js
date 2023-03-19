@@ -29,7 +29,7 @@ function ConditionList() {
   return (
     <Container >
         <Row >
-      <h3 className="condition-title" >Conditions</h3>
+      <h4 className="condition-title" >Conditions</h4>
       <Col >
         <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
       <Card>

@@ -9,6 +9,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 
 
+
 export default function Character({ character, dispatch}) {
 
 const [health, setHealth] = useState(0)
@@ -23,7 +24,7 @@ const [health, setHealth] = useState(0)
 
   return (
     <Container className="char-card"  style={{background: character.turn ? 'linear-gradient(to left, #e6eaec, #00ADB5)': 'linear-gradient(to left, #373b3e, #212529)', color: "whitesmoke", border: character.turn ? '2px solid #00ADB5' : '', boxShadow: character.turn ? 'inset 0px 0px 8px #00ADB5, 0 0 15px #00ADB5' : 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
-      <Row>
+        <Row>
         <Col>
         <h4 style={{ textDecoration: character.unconscious ? 'line-through' : ''}}>
             {character.name}

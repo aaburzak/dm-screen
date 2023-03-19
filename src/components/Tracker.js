@@ -158,6 +158,8 @@ export const ACTIONS = {
     }
   }
 
+  
+
   function newCharacter(name){
     return { id:Date.now(), name: name, health: 0, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
   }
@@ -175,6 +177,8 @@ function Tracker() {
         dispatch({type: ACTIONS.ADD_CHARACTER, payload: {name: name}})
         setName('')
     }
+    
+
 
 
 // console.log(characters)
@@ -182,7 +186,7 @@ function Tracker() {
   return (
     <Container>
         <Row className="justify-content-md-center">
-            <h3>Add Character</h3>
+            <h4>Add Character</h4>
             <Col className="md-auto text-center">
             <form className="name-form" onSubmit={handleSubmit}>
                     <input type="text" value={name} onChange={e => setName
@@ -190,12 +194,13 @@ function Tracker() {
                 </form>
             </Col>
         </Row>
-            {characters.map(character => {
+
+       
+      {characters.map(character => {
                 return <Character key={character.id} character={character} dispatch={ dispatch }/>
             })}
-        <Row>
+    
 
-        </Row>
     </Container>
   )
 }

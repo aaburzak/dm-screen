@@ -40,33 +40,28 @@ return(
     
   
     
-  <Container className="containerStyle  justify-content-md-center text-center">
-    <h1 className="title text-center">Combat</h1>
+  <Container className="containerStyle  justify-content-md-center text-center" style={{fontSize:".75rem"}}>
+    {/* <h1 className="title text-center">Combat</h1> */}
+    <h2>Combat</h2>
     
   <Row>
     <Col>
     <TodoList />
     </Col>
-    <Col >
-
-    <GnomePic />
-    
+    <Col>
+    <CoverList />
     </Col>
+
   </Row>
-  <Row  className="justify-content-md-center text-center">
+  <Row  className="justify-content-md-center text-center tracker-row">
     <Col>
     <ActionList />
     </Col>
   </Row>
-  <Row>
-    <Col>
-    <CoverList />
-    </Col>
-    </Row>
-    
+  
  
 
-  <h1 className="title combat-title text-center">Combat Tracker</h1>
+  <h3 className="tracker-row">Combat Tracker</h3>
   <Row className="justify-content-md-center text-center tracker-row" >
       <Col>
         <Tracker />
