@@ -9,7 +9,7 @@ function TodoList() {
     <Row>
     <h4 className="cover-title">Things You Can Do On Your Turn</h4>
         <Col>
-        <Card bg = 'dark' text='light' body style={{textAlign: 'left'}}>
+        <Card text='light' body style={{textAlign: 'left', background: 'linear-gradient(to left, #373b3e, #212529)'}}>
             <ul>
                 <li>Move up to your speed.</li>
                 <li>Take one action.</li>

@@ -14,7 +14,9 @@ function CustomToggle({ children, eventKey }) {
    return (
     <button
       type="button"
-      style={{ background:'linear-gradient(to left, #e6eaec, #C0C0C0)', border: 'outset', borderRadius:'50px', padding:'1rem' }}
+      bg ="dark"
+      style={{ background:'linear-gradient(to left, #373b3e, #212529)', color: "whitesmoke"}}
+      // border: 'outset', borderRadius:'50px', padding:'1rem' 
       onClick={decoratedOnClick}
       
     >
@@ -31,7 +33,7 @@ function ConditionList() {
       <Col >
         <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="0">Blinded</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
@@ -49,7 +51,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header  style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header  style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="1">Charmed</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
@@ -67,7 +69,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="2">Deafened</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
@@ -81,7 +83,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="3">Frightened</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="3">
@@ -99,7 +101,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="4">Grappled</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="4">
@@ -121,7 +123,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="5">Incapacitated</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="5">
@@ -136,7 +138,7 @@ function ConditionList() {
       </Card>
       
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="6">Invisible</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="6">
@@ -159,7 +161,7 @@ function ConditionList() {
       <Col>
       <Accordion style={{ boxShadow: 'inset 0px 0px 8px #e6eaec, 0 0 15px #e6eaec'}}>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="7">Paralyzed</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="7">
@@ -185,7 +187,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)' , fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)' , fontSize:'.8rem'}}>
           <CustomToggle eventKey="8">Petrified</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="8">
@@ -219,7 +221,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="9">Poisoned</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="9">
@@ -233,7 +235,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="10">Prone</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="10">
@@ -255,7 +257,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="11">Restrained</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="11">
@@ -277,7 +279,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="12">Stunned</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="12">
@@ -299,7 +301,7 @@ function ConditionList() {
         </Accordion.Collapse>
       </Card>
       <Card>
-        <Card.Header style={{background: 'linear-gradient(to left, #e6eaec, #C0C0C0)', fontSize:'.8rem'}}>
+        <Card.Header style={{background: 'linear-gradient(to left, #373b3e, #212529)', fontSize:'.8rem'}}>
           <CustomToggle eventKey="13">Unconscious</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="13">
