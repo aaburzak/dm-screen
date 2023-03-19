@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 import Tracker from "../components/Tracker";
 // import Calculator from "../components/Calculator";
+import TodoList from "../components/TodoList";
 import ConditionList from "../components/ConditionList";
 import ActionList from "../components/ActionList";
 import CoverList from "../components/CoverList";
@@ -39,30 +40,31 @@ return(
     
   
     
-  <Container className="containerStyle">
+  <Container className="containerStyle  justify-content-md-center text-center">
     <h1 className="title text-center">Combat</h1>
     
-  <Row className="justify-content-md-center text-center">
+  <Row>
+    <Col>
+    <TodoList />
+    </Col>
+    <Col >
+
+    <GnomePic />
+    
+    </Col>
+  </Row>
+  <Row  className="justify-content-md-center text-center">
     <Col>
     <ActionList />
     </Col>
-    {/* <Col>
-    <CoverList/>
-    </Col>  */}
+  </Row>
+  <Row>
+    <Col>
+    <CoverList />
+    </Col>
     </Row>
     
-    <Row className="justify-content-md-center text-center">
-      <Col>
-    <GnomePic />
-    </Col>
-    <Col >
-    {/* <GnomePic /> */}
-    <CoverList/>
-   
-    {/* <h3 className="aoe-title">Areas Of Effect</h3> */}
-    {/* <GnomePic /> */}
-    </Col>
-  </Row>
+ 
 
   <h1 className="title combat-title text-center">Combat Tracker</h1>
   <Row className="justify-content-md-center text-center tracker-row" >
