@@ -35,10 +35,10 @@ function ActionList() {
           </Row>
 
 <Row>
-  <Col>
+  <Col >
 
   <div>
-      <Table responsive="sm">
+      <Table responsive="sm" >
         <thead>
           <tr>
             <th>Attack</th>
@@ -50,7 +50,7 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr style={{textAlign:'left'}}>
             <td>You make a melee or ranged weapon attack.</td>
             <td>You cast a cantrip or a spell of 1st level or higher.<br></br>See the spell's casting time.</td>
             <td>You gain extra movement equal to your speed (plus any modifiers) for the current turn.</td>
@@ -70,7 +70,7 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr style={{textAlign:'left'}}>
         
             <td>Until the start of your next turn, any attack roll made against you has disadvantage if hou can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</td>
             <td>You help one creature with a task, giving that creature advantage on the next ability check it makes for the task. Or you distract one creature within 5 feet of you, and the next attack roll that an ally of yours makes against that creature has advantage.
@@ -100,7 +100,7 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr style={{textAlign:'left'}}>
 
              
             <td>You make a Wisdom (Perception) check or an Investigation (Intelligence) check to find something.</td>

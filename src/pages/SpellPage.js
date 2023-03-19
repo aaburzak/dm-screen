@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 
+import GnomePic from "../components/GnomePic";
+
 function SpellPage(){
 return(
     
@@ -13,6 +15,10 @@ return(
       </Col>
     </Row>
     <br/>
+
+    <Row>
+      <GnomePic/>
+    </Row>
 
     <Row className="justify-content-md-center botRow">
       <Col className="md-auto botCol text-center">

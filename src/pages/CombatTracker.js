@@ -44,7 +44,7 @@ return(
     {/* <h1 className="title text-center">Combat</h1> */}
     {/* <h2>Combat</h2> */}
     
-  <Row>
+    <Row>
     <Col>
     <TodoList />
     </Col>
@@ -58,7 +58,7 @@ return(
     <ActionList />
     </Col>
   </Row>
-  
+ 
  
 
   <h3 className='tracker-row'>Combat Tracker</h3>

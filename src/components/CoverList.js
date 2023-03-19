@@ -12,14 +12,14 @@ import Table from 'react-bootstrap/Table';
 
 function CoverList() {
   return (
-    <Container style={{maxWidth: '50%'}}>
+    <Container>
     <Row>
   <h4 className="cover-title">Cover</h4>
     </Row>
   
 <Row>
   
-  <Table striped bordered size="sm" variant="dark" style={{fontSize: '.55rem'}}>
+  <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
           <th>Cover</th>
@@ -29,7 +29,7 @@ function CoverList() {
       <tbody>
         <tr>
           <td>1/2</td>
-          <td colSpan={2}>+2 bonus AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
+          <td  colSpan={2}>+2 bonus AC and Dexterity saving throws against attacks and effects that originate on the opposite side of the cover.{' '}
           </td>
         </tr>
         <tr>
