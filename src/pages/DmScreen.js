@@ -3,6 +3,7 @@ import { Container, Row, Col} from 'react-bootstrap';
 import SizeChartPic from "../components/SizeChartPic";
 import SetDcTable from "../components/SetDcTable";
 import TrackDcTable from "../components/TrackDcTable";
+import DamageLevelChart from "../components/DamageLevelChart";
 
 function DmScreen(){
 return(
@@ -31,6 +32,12 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
       <TrackDcTable />
       </Col>
     </Row>
+  <Row>
+    <Col>
+    <DamageLevelChart />
+    </Col>
+  </Row>
+
     <Row>
       <Col>
         <SizeChartPic />
