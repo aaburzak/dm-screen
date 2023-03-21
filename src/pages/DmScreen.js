@@ -5,6 +5,7 @@ import SetDcTable from "../components/SetDcTable";
 import TrackDcTable from "../components/TrackDcTable";
 import DamageLevelChart from "../components/DamageLevelChart";
 import ExhaustionChart from "../components/ExhaustionChart";
+import ObjectHpChart from "../components/ObjectHpChart";
 
 function DmScreen(){
 return(
@@ -39,6 +40,11 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     </Col>
     <Col>
     <ExhaustionChart />
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+    <ObjectHpChart />
     </Col>
   </Row>
 
