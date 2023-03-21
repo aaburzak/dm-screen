@@ -4,6 +4,7 @@ import SizeChartPic from "../components/SizeChartPic";
 import SetDcTable from "../components/SetDcTable";
 import TrackDcTable from "../components/TrackDcTable";
 import DamageLevelChart from "../components/DamageLevelChart";
+import ExhaustionChart from "../components/ExhaustionChart";
 
 function DmScreen(){
 return(
@@ -35,6 +36,9 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
   <Row>
     <Col>
     <DamageLevelChart />
+    </Col>
+    <Col>
+    <ExhaustionChart />
     </Col>
   </Row>
 
