@@ -6,6 +6,8 @@ import TrackDcTable from "../components/TrackDcTable";
 import DamageLevelChart from "../components/DamageLevelChart";
 import ExhaustionChart from "../components/ExhaustionChart";
 import ObjectHpChart from "../components/ObjectHpChart";
+import ObjectAcChart from "../components/ObjectAcChart";
+import SkillsChart from "../components/SkillsChart";
 
 function DmScreen(){
 return(
@@ -45,6 +47,14 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
   <Row>
     <Col>
     <ObjectHpChart />
+    </Col>
+    <Col>
+    <ObjectAcChart />
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+    <SkillsChart />
     </Col>
   </Row>
 
