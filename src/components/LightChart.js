@@ -30,10 +30,35 @@ function LightChart() {
           <td>1 hour</td>
         </tr>
         <tr>
-            <td >Heavily obscured</td>
-          <td>Vision is blocked; creatures are effectively blinded.</td>
-          <td>Darkness, opaque, fog, dense foliage</td>
-         
+            <td >Lamp</td>
+          <td>15 ft.</td>
+          <td>+ 30 ft.</td>
+          <td>6 hours</td>
+        </tr>
+
+        <tr>
+          <td >Lantern, bullseye</td>
+          <td>60 ft. cone</td>
+          <td>+ 60 ft.</td>
+          <td>6 hours</td>
+        </tr>
+        <tr>
+          <td >Lantern, hooded</td>
+          <td>30 ft. cone</td>
+          <td>+ 30 ft.</td>
+          <td>6 hours</td>
+        </tr>
+        <tr>
+          <td style={{paddingLeft: '2rem'}}>Lowered hood</td>
+          <td>-</td>
+          <td>+ 5 ft.</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td >Torch</td>
+          <td>20 ft.</td>
+          <td>+ 20 ft.</td>
+          <td>1 hour</td>
         </tr>
               
       </tbody>
