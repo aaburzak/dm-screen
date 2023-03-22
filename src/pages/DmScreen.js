@@ -9,6 +9,7 @@ import ObjectHpChart from "../components/ObjectHpChart";
 import ObjectAcChart from "../components/ObjectAcChart";
 import SkillsChart from "../components/SkillsChart";
 import TravelPaceChart from "../components/TravelPaceChart";
+import ServicesChart from "../components/ServicesChart";
 
 function DmScreen(){
 return(
@@ -59,6 +60,11 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     </Col>
     <Col>
     <TravelPaceChart />
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+    <ServicesChart/>
     </Col>
   </Row>
  
