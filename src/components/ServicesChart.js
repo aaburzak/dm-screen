@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 function ServicesChart() {
   return (
     <Container>
-        <Row className='text-center'>
+        <Row>
       <h4 className="cover-title">Services</h4>
         </Row>
       

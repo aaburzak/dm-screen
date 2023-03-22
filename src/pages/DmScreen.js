@@ -10,6 +10,9 @@ import ObjectAcChart from "../components/ObjectAcChart";
 import SkillsChart from "../components/SkillsChart";
 import TravelPaceChart from "../components/TravelPaceChart";
 import ServicesChart from "../components/ServicesChart";
+import ObscuredAreaChart from "../components/ObscuredAreaChart";
+
+
 
 function DmScreen(){
 return(
@@ -65,6 +68,9 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
   <Row>
     <Col>
     <ServicesChart/>
+    </Col>
+    <Col>
+    <ObscuredAreaChart />
     </Col>
   </Row>
  
