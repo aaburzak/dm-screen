@@ -13,7 +13,7 @@ import ServicesChart from "../components/ServicesChart";
 import ObscuredAreaChart from "../components/ObscuredAreaChart";
 import EncounterDistanceChart from "../components/EncounterDistanceChart";
 import LightChart from "../components/LightChart";
-
+import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
 
 
 
@@ -80,6 +80,9 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
   <Row>
     <Col>
     <EncounterDistanceChart />
+    </Col>
+    <Col>
+    <FoodDrinkLodgingChart />
     </Col>
   </Row>
  
