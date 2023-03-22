@@ -17,7 +17,7 @@ import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
 import LongJumpList from "../components/LongJumpList";
 import HighJumpList from "../components/HighJumpList";
 import SuffocatingList from "../components/SuffocatingList";
-
+import ConcentrationList from "../components/ConcentrationList";
 
 
 function DmScreen(){
@@ -94,6 +94,7 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     <LongJumpList />
     <HighJumpList />
     <SuffocatingList />
+    <ConcentrationList />
     </Col>
   </Row>
  
