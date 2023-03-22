@@ -11,7 +11,7 @@ import SkillsChart from "../components/SkillsChart";
 import TravelPaceChart from "../components/TravelPaceChart";
 import ServicesChart from "../components/ServicesChart";
 import ObscuredAreaChart from "../components/ObscuredAreaChart";
-
+import EncounterDistanceChart from "../components/EncounterDistanceChart";
 
 
 function DmScreen(){
@@ -71,6 +71,11 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     </Col>
     <Col>
     <ObscuredAreaChart />
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+    <EncounterDistanceChart />
     </Col>
   </Row>
  
