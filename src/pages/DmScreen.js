@@ -14,6 +14,9 @@ import ObscuredAreaChart from "../components/ObscuredAreaChart";
 import EncounterDistanceChart from "../components/EncounterDistanceChart";
 import LightChart from "../components/LightChart";
 import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
+import LongJumpList from "../components/LongJumpList";
+import HighJumpList from "../components/HighJumpList";
+import SuffocatingList from "../components/SuffocatingList";
 
 
 
@@ -83,6 +86,14 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     </Col>
     <Col>
     <FoodDrinkLodgingChart />
+    </Col>
+  </Row>
+
+  <Row>
+    <Col>
+    <LongJumpList />
+    <HighJumpList />
+    <SuffocatingList />
     </Col>
   </Row>
  
