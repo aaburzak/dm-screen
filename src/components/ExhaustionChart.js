@@ -12,7 +12,7 @@ function ExhaustionChart() {
     </Row>
   
 <Row>
-  
+  <Col>
   <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -53,7 +53,7 @@ function ExhaustionChart() {
         </tr>
       </tbody>
     </Table>
-  
+    </Col>
 </Row>
 
   </Container>

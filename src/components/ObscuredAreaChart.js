@@ -11,7 +11,7 @@ function ObscuredAreaChart() {
     </Row>
   
 <Row>
-  
+<Col>
 <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -37,7 +37,7 @@ function ObscuredAreaChart() {
               
       </tbody>
     </Table>
-  
+    </Col>
 </Row>
 
   </Container>

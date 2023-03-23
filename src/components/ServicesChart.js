@@ -11,7 +11,7 @@ function ServicesChart() {
         </Row>
       
     <Row>
-      
+    <Col>
     <Table striped bordered size="sm" variant="dark" >
           <thead >
             <tr>
@@ -59,7 +59,7 @@ function ServicesChart() {
                      
           </tbody>
         </Table>
-      
+        </Col>
     </Row>
     
       </Container>

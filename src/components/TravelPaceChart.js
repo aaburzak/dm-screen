@@ -11,7 +11,7 @@ function TravelPaceChart() {
     </Row>
   
 <Row>
-  
+  <Col>
   <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -49,7 +49,7 @@ function TravelPaceChart() {
         </tr>
       </tbody>
     </Table>
-  
+    </Col>
 </Row>
 
   </Container>

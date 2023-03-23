@@ -13,7 +13,7 @@ function FoodDrinkLodgingChart() {
   
 <Row>
   
-    
+<Col>
     <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -120,7 +120,7 @@ function FoodDrinkLodgingChart() {
         </tr>
       </tbody>
       </Table>
-  
+      </Col>
 </Row>
 
   </Container>

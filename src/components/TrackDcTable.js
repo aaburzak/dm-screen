@@ -11,7 +11,7 @@ function TrackDcTable() {
         </Row>
       
     <Row>
-      
+    <Col>
     <Table striped bordered size="sm" variant="dark" >
           <thead >
             <tr>
@@ -42,7 +42,7 @@ function TrackDcTable() {
             </tr>            
           </tbody>
         </Table>
-      
+        </Col>
     </Row>
     
       </Container>

@@ -12,7 +12,7 @@ function LightChart() {
     </Row>
   
 <Row>
-  
+<Col>
 <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -63,7 +63,7 @@ function LightChart() {
               
       </tbody>
     </Table>
-  
+    </Col>
 </Row>
 
   </Container>

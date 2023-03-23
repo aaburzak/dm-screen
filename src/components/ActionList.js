@@ -34,10 +34,10 @@ function ActionList() {
           <h3 className="condition-title">Actions In Combat</h3>
           </Row>
 
-<Row>
+<Row >
   <Col >
 
-  <div>
+  <div >
       <Table responsive="sm" >
         <thead>
           <tr>
@@ -50,7 +50,7 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr style={{textAlign:'left'}}>
+          <tr>
             <td>You make a melee or ranged weapon attack.</td>
             <td>You cast a cantrip or a spell of 1st level or higher.<br></br>See the spell's casting time.</td>
             <td>You gain extra movement equal to your speed (plus any modifiers) for the current turn.</td>
@@ -70,15 +70,17 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr style={{textAlign:'left'}}>
+          <tr>
         
             <td>Until the start of your next turn, any attack roll made against you has disadvantage if hou can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0.</td>
             <td>You help one creature with a task, giving that creature advantage on the next ability check it makes for the task. Or you distract one creature within 5 feet of you, and the next attack roll that an ally of yours makes against that creature has advantage.
+              <br></br>
               <br></br>
               Whichever option you choose, the advantage goes away once your next turn starts.  
             </td>
             <td>You make a Dexterity (Stealth) check in an attempt to become hidden - unseen and unheard.</td>
             <td>You wait for a particular circumstance before you act, which lets you act using your reaction before the start of your next turn. You must decide in advance (a) what perceivable circumstance will trigger your reaction and (b) the action you will take in response to that trigger.
+              <br></br>
               <br></br>
               If you ready a spell, it must have a casting time of 1 action, and you must concentrate on it until you release it.
             </td>
@@ -100,7 +102,7 @@ function ActionList() {
           </tr>
         </thead>
         <tbody>
-          <tr style={{textAlign:'left'}}>
+          <tr>
 
              
             <td>You make a Wisdom (Perception) check or an Investigation (Intelligence) check to find something.</td>

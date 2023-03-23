@@ -28,14 +28,13 @@ function Navigation() {
           ) : (
             
             <Nav className="me-auto">
-            <Nav.Link className="navOp" href="/">Home</Nav.Link>
+            <Nav.Link className="navOp" href="/">Basics</Nav.Link>
             
             <Navbar.Brand className="navSpacer" >
             &#9826;
             </Navbar.Brand>
             
-            <Nav.Link className="navOp" href="/notes">Notes</Nav.Link>
-
+            <Nav.Link className="navOp" href="/travel">Travel</Nav.Link>
             <Navbar.Brand className="navSpacer" >
             &#9826;
             </Navbar.Brand>
@@ -51,8 +50,8 @@ function Navigation() {
             &#9826;
             </Navbar.Brand>
             
-            <Nav.Link className="navOp" href="/travel">Travel</Nav.Link>
-          
+            <Nav.Link className="navOp" href="/notes">Notes</Nav.Link>
+           
           </Nav>
             
           )

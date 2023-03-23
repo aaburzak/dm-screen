@@ -41,7 +41,7 @@ return(
     
   
     
-  <Container className="containerStyle  justify-content-md-center text-center" style={{fontSize:".75rem"}}>
+  <Container className="containerStyle  justify-content-md-center" style={{fontSize:".75rem"}}>
     {/* <h1 className="title text-center">Combat</h1> */}
     {/* <h2>Combat</h2> */}
     
@@ -62,9 +62,9 @@ return(
  
  
 
-  <h3 className='tracker-row'>Combat Tracker</h3>
-  <Row className="justify-content-md-center text-center tracker-row" >
-      <Col>
+  <h3 className='tracker-row text-center'>Combat Tracker</h3>
+  <Row className="justify-content-md-center  tracker-row" >
+      <Col className="text-center">
         <Tracker />
       </Col>
       

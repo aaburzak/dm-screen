@@ -11,7 +11,7 @@ function EncounterDistanceChart() {
     </Row>
   
 <Row>
-  
+<Col>
 <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -99,6 +99,7 @@ function EncounterDistanceChart() {
         </tr>        
       </tbody>
     </Table>
+    </Col>
 </Row>
 
   </Container>
