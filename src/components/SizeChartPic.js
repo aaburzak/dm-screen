@@ -1,9 +1,16 @@
 import React from 'react'
 import pic from '../images/sizechart.png';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function SizeChartPic() {
   return (
-    <img className="gnome-pic" alt='a chart of various creature sizes' src={pic} />
+    <Container>
+      <Row>
+      <h4 className="cover-title">Creature Sizes</h4>
+      </Row>
+
+      <img className="size-pic" alt='a chart of various creature sizes' src={pic} />
+    </Container>
   )
 }
 

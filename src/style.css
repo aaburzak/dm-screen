@@ -110,8 +110,13 @@ font-size: smaller;
     margin-top: 1rem;
 }
 .gnome-pic{
+    max-width: 150%;
+    
+}
+
+.size-pic{
+ 
     max-width: 100%;
-    margin-top: 4rem;
 }
 .condition-btn-box > button{
     padding-left: 1rem;

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 
 import GnomePic from "../components/GnomePic";
+import ConcentrationList from "../components/ConcentrationList";
 
 function SpellPage(){
 return(
@@ -17,7 +18,12 @@ return(
     <br/>
 
     <Row>
+      <Col>
+      <ConcentrationList/>
+      </Col>
+      <Col>
       <GnomePic/>
+      </Col>
     </Row>
 
     <Row className="justify-content-md-center botRow">

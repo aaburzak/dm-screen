@@ -6,7 +6,8 @@ import TodoList from "../components/TodoList";
 import ConditionList from "../components/ConditionList";
 import ActionList from "../components/ActionList";
 import CoverList from "../components/CoverList";
-import GnomePic from "../components/GnomePic";
+import ExhaustionChart from "../components/ExhaustionChart";
+import ConcentrationList from "../components/ConcentrationList";
 // import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 // import Card from 'react-bootstrap/Card';
@@ -71,6 +72,8 @@ return(
        <div className="sticky">
         
         <ConditionList/>
+        <ExhaustionChart />
+        <ConcentrationList />
       
         </div>
       </Col>

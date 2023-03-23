@@ -11,6 +11,7 @@ function ObjectAcChart() {
         </Row>
       
     <Row>
+      <Col>
       
     <Table striped bordered size="sm" variant="dark" >
           <thead >
@@ -50,7 +51,7 @@ function ObjectAcChart() {
             </tr>            
           </tbody>
         </Table>
-      
+        </Col>
     </Row>
     
       </Container>

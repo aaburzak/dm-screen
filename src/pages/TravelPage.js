@@ -10,6 +10,7 @@ import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
 import LongJumpList from "../components/LongJumpList";
 import HighJumpList from "../components/HighJumpList";
 import SuffocatingList from "../components/SuffocatingList";
+import TrackDcTable from "../components/TrackDcTable";
 
 
 function TravelPage(){
@@ -29,6 +30,7 @@ return(
       <Col>
       <TravelPaceChart />
       <EncounterDistanceChart />
+      <TrackDcTable />
       </Col>
       <Col>
       <ServicesChart />

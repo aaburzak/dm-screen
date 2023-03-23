@@ -2,20 +2,17 @@ import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 import SizeChartPic from "../components/SizeChartPic";
 import SetDcTable from "../components/SetDcTable";
-import TrackDcTable from "../components/TrackDcTable";
 import DamageLevelChart from "../components/DamageLevelChart";
-import ExhaustionChart from "../components/ExhaustionChart";
 import ObjectHpChart from "../components/ObjectHpChart";
 import ObjectAcChart from "../components/ObjectAcChart";
 import SkillsChart from "../components/SkillsChart";
-import ConcentrationList from "../components/ConcentrationList";
 
 
 function DmScreen(){
 return(
     
     
-  <Container className="containerStyle">
+  <Container className="containerStyle" style={{fontSize: '.75rem'}}>
     <br/>
   {/* <Row>
       <Col className="portHead">
@@ -29,46 +26,30 @@ return(
         <p>Welcome to DM Screen. An online resource that contains all the handy reference material that is found within a Dungeons & Dragons 5th Edition DM Screen, as well as a few other useful tools to help you run your campaign.</p>
       </Col>
     </Row> */}
-    <Row>
-      <Col>
-      <SetDcTable />
-      </Col>
-      <Col>
-      <TrackDcTable />
-      </Col>
-    </Row>
+  
   <Row>
     <Col>
+      <ObjectAcChart />
+      <ObjectHpChart />
+      <SkillsChart />
+    </Col>
+    <Col>
+      <SizeChartPic />
+      <SetDcTable />
     <DamageLevelChart />
     </Col>
-    <Col>
-    <ExhaustionChart />
-    </Col>
   </Row>
-  <Row>
-    <Col>
-    <ObjectHpChart />
-    </Col>
-    <Col>
-    <ObjectAcChart />
-    </Col>
-  </Row>
-  <Row>
-    <Col>
+  
+  {/* <Row>
+  <Col>
     <SkillsChart />
     </Col>
-    <Col>
-    <ConcentrationList />
-    </Col>
-  </Row>
-
-    
   
-    <Row>
-      <Col>
-        <SizeChartPic />
-      </Col>
-    </Row>
+    <Col>
+    <SetDcTable />
+    <DamageLevelChart />
+    </Col>
+  </Row> */}
   </Container>
 );
 

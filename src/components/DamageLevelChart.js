@@ -4,12 +4,13 @@ import Table from 'react-bootstrap/Table';
 
 function DamageLevelChart() {
   return (
-    <Container  className='text-center'>
+    <Container>
         <Row>
       <h4 className="cover-title">Damage By Level And Severity</h4>
         </Row>
       
     <Row>
+    <Col>
       
     <Table striped bordered size="sm" variant="dark" >
           <thead >
@@ -48,7 +49,7 @@ function DamageLevelChart() {
                      
           </tbody>
         </Table>
-      
+        </Col>
     </Row>
     
       </Container>

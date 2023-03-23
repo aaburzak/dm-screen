@@ -5,9 +5,9 @@ import Table from 'react-bootstrap/Table';
 
 function SkillsChart() {
   return (
-    <Container  className='text-center'>
+    <Container>
     <Row>
-  <h4 className="cover-title">Damage By Level And Severity</h4>
+  <h4 className="cover-title">Skills And Associated Abilities</h4>
     </Row>
   
 <Row>

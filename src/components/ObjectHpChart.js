@@ -5,12 +5,12 @@ import Table from 'react-bootstrap/Table';
 function ObjectHpChart() {
   return (
     <Container>
-    <Row className='text-center'>
+    <Row>
   <h4 className="cover-title">Object Hit Points</h4>
     </Row>
   
 <Row>
-  
+  <Col>
 <Table striped bordered size="sm" variant="dark" >
       <thead >
         <tr>
@@ -43,7 +43,7 @@ function ObjectHpChart() {
                  
       </tbody>
     </Table>
-  
+    </Col>
 </Row>
 
   </Container>
