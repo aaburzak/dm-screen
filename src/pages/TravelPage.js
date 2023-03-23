@@ -1,23 +1,45 @@
 import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 
+import TravelPaceChart from "../components/TravelPaceChart";
+import ServicesChart from "../components/ServicesChart";
+import ObscuredAreaChart from "../components/ObscuredAreaChart";
+import EncounterDistanceChart from "../components/EncounterDistanceChart";
+import LightChart from "../components/LightChart";
+import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
+import LongJumpList from "../components/LongJumpList";
+import HighJumpList from "../components/HighJumpList";
+import SuffocatingList from "../components/SuffocatingList";
+
+
 function TravelPage(){
 return(
     
     
-  <Container className="containerStyle">
+  <Container className="containerStyle" style={{fontSize: '.75rem'}}>
     <br/>
-  <Row>
+  {/* <Row>
       <Col className="portHead">
         <h1>TRAVEL</h1>
       </Col>
     </Row>
-    <br/>
+    <br/> */}
 
     <Row className="justify-content-md-center botRow">
-      <Col className="md-auto botCol text-center">
-        <p>Hnforey thsenmanes rahenehv, heinuur keiii šssfoo lihšshasc ogrbessšsz, kisenšs cšthšchetq. Jesssho heixs ndahaganey hahaz gaah woranj csssss agršsi keheni schaasc liih. Zahitaza bexcsnz bescs daaahotahun zeir forn qorahbethh etcsuli hoorxi vesur eses. Zenli ochanuuurahi wots kinagahšsh, csssšcsch yeyhr wovehs zahnuuuun ssssiinnur paasšs aazass cšzeyhpanrc? Choaheit gahzah woonurahomas, ršsscth chohi foths grchšchjeni bein ahzchje?
-Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qortbey huuuraa hikiyah nnzexš, chkiazag! Sszexšcšsliah nulinnn tahchu, yšsdahen litfoo, ssahchas shths csssw kahopahs. Csšqor raah neyeneyexhoth einet tass ssraanzetagr sssrazah benurnuuur eskahah ahinn hšsšsg pahen. Hihcsy netagr keydah nunir šnulss onesšsssonz foosc hocx, nunir azazey.</p>
+      <Col>
+      <TravelPaceChart />
+      <EncounterDistanceChart />
+      </Col>
+      <Col>
+      <ServicesChart />
+      <FoodDrinkLodgingChart />
+      </Col>
+      <Col>
+      <ObscuredAreaChart />
+      <LightChart />
+      <LongJumpList />
+      <HighJumpList />
+      <SuffocatingList />
       </Col>
     </Row>
   </Container>

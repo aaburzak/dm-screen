@@ -8,15 +8,6 @@ import ExhaustionChart from "../components/ExhaustionChart";
 import ObjectHpChart from "../components/ObjectHpChart";
 import ObjectAcChart from "../components/ObjectAcChart";
 import SkillsChart from "../components/SkillsChart";
-import TravelPaceChart from "../components/TravelPaceChart";
-import ServicesChart from "../components/ServicesChart";
-import ObscuredAreaChart from "../components/ObscuredAreaChart";
-import EncounterDistanceChart from "../components/EncounterDistanceChart";
-import LightChart from "../components/LightChart";
-import FoodDrinkLodgingChart from "../components/FoodDrinkLodgingChart";
-import LongJumpList from "../components/LongJumpList";
-import HighJumpList from "../components/HighJumpList";
-import SuffocatingList from "../components/SuffocatingList";
 import ConcentrationList from "../components/ConcentrationList";
 
 
@@ -26,7 +17,7 @@ return(
     
   <Container className="containerStyle">
     <br/>
-  <Row>
+  {/* <Row>
       <Col className="portHead">
         <h1>DM SCREEN</h1>
       </Col>
@@ -34,11 +25,10 @@ return(
     <br/>
 
     <Row className="justify-content-md-center botRow">
-      <Col className="md-auto botCol text-center">
-        <p>Hnforey thsenmanes rahenehv, heinuur keiii šssfoo lihšshasc ogrbessšsz, kisenšs cšthšchetq. Jesssho heixs ndahaganey hahaz gaah woranj csssss agršsi keheni schaasc liih. Zahitaza bexcsnz bescs daaahotahun zeir forn qorahbethh etcsuli hoorxi vesur eses. Zenli ochanuuurahi wots kinagahšsh, csssšcsch yeyhr wovehs zahnuuuun ssssiinnur paasšs aazass cšzeyhpanrc? Choaheit gahzah woonurahomas, ršsscth chohi foths grchšchjeni bein ahzchje?
-Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qortbey huuuraa hikiyah nnzexš, chkiazag! Sszexšcšsliah nulinnn tahchu, yšsdahen litfoo, ssahchas shths csssw kahopahs. Csšqor raah neyeneyexhoth einet tass ssraanzetagr sssrazah benurnuuur eskahah ahinn hšsšsg pahen. Hihcsy netagr keydah nunir šnulss onesšsssonz foosc hocx, nunir azazey.</p>
+      <Col className="md-auto botCol">
+        <p>Welcome to DM Screen. An online resource that contains all the handy reference material that is found within a Dungeons & Dragons 5th Edition DM Screen, as well as a few other useful tools to help you run your campaign.</p>
       </Col>
-    </Row>
+    </Row> */}
     <Row>
       <Col>
       <SetDcTable />
@@ -68,37 +58,12 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
     <SkillsChart />
     </Col>
     <Col>
-    <TravelPaceChart />
-    </Col>
-  </Row>
-  <Row>
-    <Col>
-    <ServicesChart/>
-    </Col>
-    <Col>
-    <ObscuredAreaChart />
-    <LightChart />
-    </Col>
-  </Row>
-  <Row>
-    <Col>
-    <EncounterDistanceChart />
-    </Col>
-    <Col>
-    <FoodDrinkLodgingChart />
-    </Col>
-  </Row>
-
-  <Row>
-    <Col>
-    <LongJumpList />
-    <HighJumpList />
-    <SuffocatingList />
     <ConcentrationList />
     </Col>
   </Row>
- 
 
+    
+  
     <Row>
       <Col>
         <SizeChartPic />
