@@ -3,7 +3,7 @@ import { Container, Row, Col} from 'react-bootstrap';
 
 import GnomePic from "../components/GnomePic";
 import ConcentrationList from "../components/ConcentrationList";
-import SpellList from "../components/SpellList";
+import Spells from "../components/Spells";
 
 function SpellPage(){
 return(
@@ -36,7 +36,7 @@ Henhah unulšstho otahirtansaag lkigagr cšsssz hšssah. Chšfo nhseyeninuran qo
 
     <Row>
       <Col>
-      <SpellList />
+        <Spells />
       </Col>
     </Row>
   </Container>
