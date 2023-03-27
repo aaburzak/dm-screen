@@ -31,12 +31,16 @@ function App() {
                 element={<NotePage />} 
               />
               <Route 
+                path="/travel" 
+                element={<TravelPage />} 
+              />
+              <Route 
                 path="/spells" 
                 element={<SpellPage />} 
               />
               <Route 
-                path="/travel" 
-                element={<TravelPage />} 
+                path="/spells/:search" 
+                element={<SpellPage />} 
               />
             </Routes>
         </div> 
