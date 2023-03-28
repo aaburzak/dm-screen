@@ -151,3 +151,9 @@ font-size: smaller;
     border-radius: 50%;
     font-size: xx-small;
 }
+
+.spellName:hover{
+    cursor: pointer;
+    background-color: #6c757d;
+    color: whitesmoke;
+}

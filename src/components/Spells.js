@@ -11,6 +11,12 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function Spells() {
   const [spell, setSpell] = useState([]);
   const [spellList, setSpellList] = useState([]);
+  const [spellComponents, setSpellComponents] = useState([]);
+  const [spellRange, setSpellRange] = useState([]);
+  const [spellDuration, setSpellDuration] = useState([]);
+  const [spellSchool, setSpellSchool] = useState([]);
+  const [spellClass, setSpellClass] = useState([]);
+
 
   function spellSearch(spellName) {
     const spellQueryUrl = `https://www.dnd5eapi.co/api/spells/${spellName}`;
@@ -20,8 +26,14 @@ function Spells() {
         return response.json();
       })
       .then(function (data) {
-        console.log(data);
+        console.log(data.classes);
         setSpell(data.desc);
+        setSpellComponents(data.components);
+        setSpellRange(data.range);
+        setSpellDuration(data.duration);
+        setSpellSchool(data.school.name);
+        setSpellClass(data.classes);
+        
       });
   }
 
@@ -156,9 +168,23 @@ function Spells() {
           </ListGroup>
         </Col>
         <Col>
+        <div className="sticky">
+        <p>{spellSchool}</p>
+        {spellClass.map((classes) => {
+            return <p key={uuidv4()}>{classes.name}</p>;
+          })}
           {spell.map((description) => {
             return <p key={uuidv4()}>{description}</p>;
           })}
+          {spellComponents.map((components) => {
+            return <p key={uuidv4()}>{components}</p>;
+          })}
+        <p>{spellRange}</p>
+        <p>{spellDuration}</p>
+        
+         
+          
+          </div>
         </Col>
       </Row>
     </Container>
