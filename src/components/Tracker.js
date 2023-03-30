@@ -23,7 +23,7 @@ export const ACTIONS = {
     TOGGLE_RESTRAINED:    'toggle-restrained',
     TOGGLE_STUN: 'toggle-stun',
     TOGGLE_UNCONSCIOUS: 'toggle-unconscious',
-    TOGGLE_TURN: 'toggle-turn',
+    TOGGLE_CONCENTRATION: 'toggle-concentration',
     REMOVE_CHARACTER: 'remove-character',
   }
 
@@ -141,10 +141,10 @@ export const ACTIONS = {
                         }
                         return character
                     })
-                    case ACTIONS.TOGGLE_TURN:
+                    case ACTIONS.TOGGLE_CONCENTRATION:
                     return characters.map(character =>{
                         if (character.id === action.payload.id){
-                            return{ ...character, turn : !character.turn }
+                            return{ ...character, concentration : !character.concentration }
                         }
                         return character
                     })
@@ -161,7 +161,7 @@ export const ACTIONS = {
   
 
   function newCharacter(name){
-    return { id:Date.now(), name: name, health: 0, dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
+    return { id:Date.now(), name: name, health: 0,  dead: false, blinded: false, charmed: false, deafened: false, frightened: false, grappled: false, incapacitated: false, invisible: false, paralyzed: false, petrified: false, poisoned: false, prone: false, restrained: false, stunned: false, unconscious: false}
   }
 
 

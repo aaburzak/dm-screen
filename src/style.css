@@ -161,7 +161,6 @@ font-size: smaller;
 
 .spellName:hover{
     cursor: pointer;
-    /* background: linear-gradient(to right, #e6eaec, #00ADB5); */
     font-weight: bold;
     background-color: #071163;
     color: whitesmoke;
