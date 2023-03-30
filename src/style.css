@@ -126,6 +126,10 @@ font-size: smaller;
     font-size: x-small;
 }
 
+
+.other-note{
+    margin-top: 1rem;
+}
 .remove-btn {
     border-radius: 25px;
     margin-top: 2rem;
@@ -133,6 +137,7 @@ font-size: smaller;
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: smaller;
+   
 }
 
 .char-card{
@@ -143,14 +148,14 @@ font-size: smaller;
     max-width: fit-content;
 }
 
-.other-note{
-    margin-top: 1rem;
+.charNote{
+
+   
+    margin: 1rem;
+    
 }
 
-.remove-note-btn{
-    border-radius: 50%;
-    font-size: xx-small;
-}
+
 
 .spellName:hover{
     cursor: pointer;

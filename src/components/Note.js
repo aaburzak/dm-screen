@@ -1,6 +1,7 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, ListGroup} from 'react-bootstrap';
 import { useReducer, useState } from "react";
+
 
 import NoteBody from "./NoteBody";
 
@@ -53,9 +54,15 @@ export default function Note() {
             </Col>
         </Row>
         <Row>
+       
+        
+  
         {notes.map(note => {
-                return <NoteBody key={note.id} note={note} dispatch={ dispatch }/>
+                return <Col><NoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
             })}
+       
+    
+        
         </Row>
    </Container>
   )
