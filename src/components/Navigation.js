@@ -9,9 +9,9 @@ import {
 
 function Navigation() {
   return (
-    <Navbar className="nav-bar" bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" fixed="top" >
     
-      <Container>
+      <Container style={{fontSize:'large'}}>
           
             <>
             <Navbar.Brand 
@@ -30,25 +30,25 @@ function Navigation() {
             <Nav className="me-auto">
             <Nav.Link className="navOp" href="/">Basics</Nav.Link>
             
-            <Navbar.Brand className="navSpacer" >
+            {/* <Navbar.Brand className="navSpacer" >
             &#9826;
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             
             <Nav.Link className="navOp" href="/travel">Travel</Nav.Link>
-            <Navbar.Brand className="navSpacer" >
+            {/* <Navbar.Brand className="navSpacer" >
             &#9826;
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             
             <Nav.Link className="navOp" href="/combat">Combat</Nav.Link>
 
-            <Navbar.Brand className="navSpacer" >
+            {/* <Navbar.Brand className="navSpacer" >
             &#9826;
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             
             <Nav.Link className="navOp" href="/spells">Spells</Nav.Link>
-            <Navbar.Brand className="navSpacer" >
+            {/* <Navbar.Brand className="navSpacer" >
             &#9826;
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             
             <Nav.Link className="navOp" href="/notes">Notes</Nav.Link>
            

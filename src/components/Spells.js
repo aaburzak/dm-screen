@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { v4 as uuidv4 } from "uuid";
 
-import { Container, Row, Col, ListGroupItem } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -25,6 +25,7 @@ function Spells() {
   const [duration,setDuration] = useState('');
   const [components, setComponents] = useState('');
   const [classes, setClasses] = useState('');
+  const [spellHead, setSpellHead] = useState ('');
 
 
   function showSpellBox(){
@@ -72,16 +73,17 @@ function Spells() {
 
   return (
     <Container>
-      <Row>
+      <Row >
         <Col>
           <h1>Spells</h1>
-
-          <ButtonGroup size="lg">
+        
+          <ButtonGroup  size="lg">
             <Button
               variant="secondary"
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(0);
+                setSpellHead('Cantrips');
               }}
             >
               Cantrips
@@ -91,6 +93,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(1);
+                setSpellHead('1st Level');
               }}
             >
               1st
@@ -100,6 +103,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(2);
+                setSpellHead('2nd Level');
               }}
             >
               2nd
@@ -109,6 +113,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(3);
+                setSpellHead('3rd Level');
               }}
             >
               3rd
@@ -118,6 +123,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(4);
+                setSpellHead('4th Level');
               }}
             >
               4th
@@ -127,6 +133,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(5);
+                setSpellHead('5th Level');
               }}
             >
               5th
@@ -136,6 +143,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(6);
+                setSpellHead('6th Level');
               }}
             >
               6th
@@ -145,6 +153,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(7);
+                setSpellHead('7th Level');
               }}
             >
               7th
@@ -154,6 +163,7 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(8);
+                setSpellHead('8th Level');
               }}
             >
               8th
@@ -163,17 +173,19 @@ function Spells() {
               onClick={(e) => {
                 e.preventDefault();
                 spellListSearch(9);
+                setSpellHead('9th Level');
               }}
             >
               9th
             </Button>
           </ButtonGroup>
         </Col>
-      </Row>
+      </Row >
       <br></br>
-      <Row>
-        <Col>
-        <ListGroup>
+      <Row >
+        <Col style={{paddingTop:'1rem'}}>
+        <h3>{spellHead}</h3>
+        <ListGroup >
           {spellList.map((spell) => {
             return (
               <ListGroup.Item className="spellName"
@@ -190,8 +202,8 @@ function Spells() {
           })}
           </ListGroup>
         </Col>
-        <Col>
-        <div className="sticky">
+        <Col >
+          <div className="sticky" style={{paddingTop:'3rem', paddingLeft:'1rem'}}>
         <h3><b>{spellName}</b></h3>
         
         <h6><b>{spellSchool}</b></h6>
