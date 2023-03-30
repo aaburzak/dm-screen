@@ -18,13 +18,7 @@ return(
     
     
   <Container className="containerStyle" style={{fontSize: '.75rem'}}>
-    <br/>
-  {/* <Row>
-      <Col className="portHead">
-        <h1>TRAVEL</h1>
-      </Col>
-    </Row>
-    <br/> */}
+
 
     <Row className="justify-content-md-center botRow">
       <Col>

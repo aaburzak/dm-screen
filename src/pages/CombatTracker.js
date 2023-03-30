@@ -41,10 +41,8 @@ return(
     
   
     
-  <Container className="containerStyle  justify-content-md-center" style={{fontSize:".75rem"}}>
-    {/* <h1 className="title text-center">Combat</h1> */}
-    {/* <h2>Combat</h2> */}
-    
+  <Container className="containerStyle  " style={{fontSize:".75rem"}}>
+ 
     <Row>
     <Col>
     <TodoList />

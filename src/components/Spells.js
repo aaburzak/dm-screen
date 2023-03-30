@@ -183,9 +183,9 @@ function Spells() {
       </Row >
       <br></br>
       <Row >
-        <Col style={{paddingTop:'1rem'}}>
+        <Col >
         <h3>{spellHead}</h3>
-        <ListGroup >
+        <ListGroup style={{paddingTop: '1rem'}}>
           {spellList.map((spell) => {
             return (
               <ListGroup.Item className="spellName"
@@ -203,7 +203,7 @@ function Spells() {
           </ListGroup>
         </Col>
         <Col >
-          <div className="sticky" style={{paddingTop:'3rem', paddingLeft:'1rem'}}>
+          <div className="sticky" style={{ paddingLeft:'1rem', paddingTop: '3rem'}}>
         <h3><b>{spellName}</b></h3>
         
         <h6><b>{spellSchool}</b></h6>
