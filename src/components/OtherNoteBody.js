@@ -4,7 +4,7 @@ import CloseButton from 'react-bootstrap/CloseButton';
 import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card';
 
-import { NOTEACTIONS } from './Note';
+import { OTHER_NOTEACTIONS } from './OtherNote';
 
 export default function OtherNoteBody({note, dispatch}) {
   return (
@@ -12,9 +12,9 @@ export default function OtherNoteBody({note, dispatch}) {
             <>
             <div style={{maxWidth: '100%', marginTop:'1rem'}}>
             <div style={{textAlign: 'right', color: 'white'}}>
-            <CloseButton variant='white' onClick={()=> dispatch({ type:NOTEACTIONS.REMOVE_NOTE, payload:{ id: note.id }})}></CloseButton>
+            <CloseButton variant='white' onClick={()=> dispatch({ type:OTHER_NOTEACTIONS.REMOVE_NOTE, payload:{ id: note.id }})}></CloseButton>
             </div>
-            <Card style={{color: 'green'}}body>
+            <Card style={{color: 'black'}}body>
             {note.text}</Card>
             </div>
             </>

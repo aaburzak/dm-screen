@@ -2,20 +2,20 @@ import React from "react";
 import {Container, Row, Col} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 
-import NoteBody from "./NoteBody";
+
+import OtherNoteBody from "./OtherNoteBody";
 
 
-
-export const NOTEACTIONS = {
+export const OTHER_NOTEACTIONS = {
     ADD_NOTE: 'add-note'
 }
 
 function reducer(notes, action){
     switch(action.type){
-        case NOTEACTIONS.ADD_NOTE:
+        case OTHER_NOTEACTIONS.ADD_NOTE:
             return[...notes, newNote(action.payload.text)]
     
-        case NOTEACTIONS.REMOVE_NOTE:
+        case OTHER_NOTEACTIONS.REMOVE_NOTE:
                 return notes.filter(note => note.id !== action.payload.id)
                 default:
                     return notes
@@ -29,13 +29,13 @@ function newNote(text){
 
 
 
-export default function Note() {
+export default function OtherNote() {
     const [notes, dispatch] = useReducer(reducer,[])
     const [text, setText] = useState('')
 
     function handleSubmit(e) {
         e.preventDefault()
-        dispatch({type: NOTEACTIONS.ADD_NOTE, payload: {text: text}})
+        dispatch({type: OTHER_NOTEACTIONS.ADD_NOTE, payload: {text: text}})
         setText('')
     }
 
@@ -57,13 +57,13 @@ export default function Note() {
        
         
   
-        {notes.map(note => {
-                return <Col><NoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
-            })}
-
         {/* {notes.map(note => {
-                return <Col><OtherNoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
+                return <Col><NoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
             })} */}
+
+        {notes.map(note => {
+                return <Col><OtherNoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
+            })}
 
 
        

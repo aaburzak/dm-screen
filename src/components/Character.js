@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, } from "react";
 import { ACTIONS } from './Tracker';
-import Note from './Note';
+import OtherNote from './OtherNote';
 import {Container, Row, Col} from 'react-bootstrap';
 
 
@@ -68,7 +68,7 @@ const [health, setHealth] = useState(0)
       </Row>
       
       <Row>
-        <Note/>
+        <OtherNote/>
       </Row>
 
       <Row>
