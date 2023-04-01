@@ -25,6 +25,7 @@ export const ACTIONS = {
     TOGGLE_UNCONSCIOUS: 'toggle-unconscious',
     TOGGLE_CONCENTRATION: 'toggle-concentration',
     REMOVE_CHARACTER: 'remove-character',
+    NEXT_CHARACTER: 'next-character',
   }
 
   function reducer(characters, action){
@@ -32,7 +33,11 @@ export const ACTIONS = {
         case ACTIONS.ADD_CHARACTER:
             return[...characters, newCharacter(action.payload.name)]
 
-
+        case ACTIONS.NEXT_CHARACTER:
+            characters.push(characters.shift());
+            
+            console.log(characters)
+            return [...characters]
         // case ACTIONS.ADD_HEALTH:
         //     return[...characters, newHealth(action.payload.health)]
 
@@ -194,9 +199,15 @@ function Tracker() {
                 </form>
             </Col>
         </Row>
+        <Row>
+            <Col>
+            <button onClick={()=> dispatch({ type: ACTIONS.NEXT_CHARACTER })}>NEXT</button>
+            </Col>
+        </Row>
 
        
       {characters.map(character => {
+        // console.log(character.id)
                 return <Character key={character.id} character={character} dispatch={ dispatch }/>
             })}
     

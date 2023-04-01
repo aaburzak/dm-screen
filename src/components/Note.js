@@ -39,7 +39,7 @@ export default function Note() {
         setText('')
     }
 
-    console.log(notes)
+    // console.log(notes)
 
 
 

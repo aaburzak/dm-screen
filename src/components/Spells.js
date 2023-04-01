@@ -40,7 +40,7 @@ function Spells() {
         return response.json();
       })
       .then(function (data) {
-        console.log(data.classes);
+       
         setSpellName(data.name);
         setSpellDesc(data.desc);
         setSpellHigherLevel(data.higher_level);
@@ -66,7 +66,7 @@ function Spells() {
         return response.json();
       })
       .then(function (data) {
-        console.log(data.results);
+       
         setSpellList(data.results);
       });
   }
