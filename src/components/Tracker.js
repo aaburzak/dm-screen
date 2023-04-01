@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import Character from "./Character";
 
@@ -180,11 +180,13 @@ export const ACTIONS = {
 function Tracker() {
     const [characters, dispatch] = useReducer(reducer,[])
     const [name, setName] = useState('')
+    const [display, setDisplay] = useState('none')
 
     function handleSubmit(e) {
         e.preventDefault()
         dispatch({type: ACTIONS.ADD_CHARACTER, payload: {name: name}})
         setName('')
+        setDisplay('')
     }
     
 
@@ -194,28 +196,35 @@ function Tracker() {
 
   return (
     <Container>
+         <h4 style={{marginBottom:'2rem'}} className='text-center'>Combat Tracker</h4>
         <Row className="justify-content-md-center">
-            <h4>Add Character</h4>
+
+            
             <Col className="md-auto text-center">
+            <h5>Add Character</h5>
             <form className="name-form" onSubmit={handleSubmit}>
                     <input type="text" value={name} onChange={e => setName
                     (e.target.value)} />
                 </form>
             </Col>
-            
         </Row>
+        
         <Row>
-            <Col>
-            <button onClick={()=> dispatch({ type: ACTIONS.NEXT_CHARACTER })}>Next Turn</button>
-            </Col>
+        <Col>
+            <Button variant="secondary" style={{display: display }} onClick={()=> dispatch({ type: ACTIONS.NEXT_CHARACTER })}><b>Next Turn</b></Button>
+        </Col>
         </Row>
 
-       
-      {characters.map(character => {
+       <Row>
+        <Col>
+        {characters.map(character => {
         // console.log(character.id)
                 return <Character key={character.id} character={character} dispatch={ dispatch }/>
             })}
     
+        </Col>
+       </Row>
+      
 
     </Container>
   )

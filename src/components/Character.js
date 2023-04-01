@@ -29,12 +29,13 @@ const [health, setHealth] = useState(0)
         <h4 style={{ textDecoration: character.unconscious ? 'line-through' : ''}}>
             {character.name}
         </h4>
-        <button className="turn-btn" style={{fontWeight:'bold' , color: character.concentration ? '#071163' : '#071163', background: character.concentration ? '#00ADB5': '', border: character.concentration ? 'none' : '', boxShadow: character.concentration ? 'inset 0px 0px 8px #FFFFFF, 0 0 15px #FFFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_CONCENTRATION, payload:{ id: character.id }})}>Concentration</button>
+        <button className="concentration-btn" style={{fontWeight:'bold' , color: character.concentration ? '#071163' : '#071163', background: character.concentration ? '#00ADB5': '', border: character.concentration ? 'none' : '', boxShadow: character.concentration ? 'inset 0px 0px 8px #FFFFFF, 0 0 15px #FFFFFF' : '' }} onClick={()=> dispatch({ type: ACTIONS.TOGGLE_CONCENTRATION, payload:{ id: character.id }})}>Concentration</button>
         </Col>
         <Col>
         <h4>HP = {character.health}</h4>
-        <b>&#43;</b> <form onSubmit={handleSubmitAdd}>
-                    <input type="number"  onChange={e => setHealth
+        <b>&#43;</b> 
+          <form  onSubmit={handleSubmitAdd}>
+                    <input type="number"  style={{maxWidth:"50%"}} onChange={e => setHealth
                     (e.target.value)} />
                 </form>
         <b>&#8722;</b>

@@ -33,7 +33,7 @@ return(
     </Col>
 
   </Row>
-  <Row  className="justify-content-md-center text-center" style={{marginTop: '3rem'}}>
+  <Row  className="justify-content-md-center text-center" style={{marginTop: '3rem', marginBottom:'3rem'}}>
     <Col>
     <ActionList />
     </Col>
@@ -41,7 +41,6 @@ return(
  
  
 
-  <h3 className='tracker-row text-center'>Combat Tracker</h3>
   <Row className="justify-content-md-center  tracker-row" >
       <Col className="text-center">
         <Tracker />

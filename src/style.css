@@ -68,9 +68,6 @@ body {
 }
 
 
-.tracker-row{
-    margin-top: 2rem;
-}
 
 .sticky{
     position: -webkit-sticky;
@@ -80,15 +77,15 @@ body {
 
 .name-form{
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.turn-btn{
+.concentration-btn{
 border-radius: 25px;
 margin-top: 1rem;
 margin-bottom: 2rem;
-padding-left: 2rem;
-padding-right: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
 font-size: smaller;
 }
 
