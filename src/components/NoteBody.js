@@ -9,15 +9,21 @@ import { NOTEACTIONS } from './Note';
 export default function OtherNoteBody({note, dispatch}) {
   return (
 
-            <>
-            <div style={{maxWidth: '100%', marginTop:'1rem'}}>
-            <div style={{textAlign: 'right', color: 'white'}}>
-            <CloseButton variant='white' onClick={()=> dispatch({ type:NOTEACTIONS.REMOVE_NOTE, payload:{ id: note.id }})}></CloseButton>
+            <Container>
+              <Row>
+                <Col>
+          
+            <div style={{textAlign: 'right'}}>
+            <CloseButton onClick={()=> dispatch({ type:NOTEACTIONS.REMOVE_NOTE, payload:{ id: note.id }})}></CloseButton>
             </div>
-            <Card style={{color: 'green'}}body>
-            {note.text}</Card>
-            </div>
-            </>
+            <ul>
+              <li>
+              {note.text}
+              </li>
+            </ul> 
+            </Col>
+            </Row>
+            </Container>
             
   )
 }

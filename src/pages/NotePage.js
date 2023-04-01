@@ -37,9 +37,9 @@ function NotePage(){
 
 return(
   <Container>
-    <Row className="justify-content-md-center">
+    <Row>
             <h3>Add Folder</h3>
-            <Col className="md-auto text-center">
+            <Col>
             <form className="name-form" onSubmit={handleSubmitFolder}>
                     <input type="text" value={folderName} onChange={e => setFolderName
                     (e.target.value)} />

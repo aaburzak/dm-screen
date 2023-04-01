@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Card} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import NoteBody from "./NoteBody";
@@ -39,37 +39,36 @@ export default function Note() {
         setText('')
     }
 
-    // console.log(notes)
+ 
 
 
 
   return (
    <Container>
         <Row>
-            <Col className="md-auto  text-center">
-                <form onSubmit={handleSubmit}>
+            <Col>
+                <form style={{marginBottom:'1rem'}} onSubmit={handleSubmit}>
                     <input type="text" value={text} onChange={e => setText
                     (e.target.value)} />
                 </form>
             </Col>
         </Row>
-        <Row>
        
         
-  
+        <Row>
+        <Card >
+        <Col>
+            
+                      
         {notes.map(note => {
-                return <Col><NoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
+                return <NoteBody key={note.id} note={note} dispatch={ dispatch }/>
             })}
 
-        {/* {notes.map(note => {
-                return <Col><OtherNoteBody key={note.id} note={note} dispatch={ dispatch }/></Col>
-            })} */}
-
-
-       
-    
-        
+           
+        </Col>
+        </Card>
         </Row>
+        
    </Container>
   )
 }

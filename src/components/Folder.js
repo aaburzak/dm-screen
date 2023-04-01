@@ -2,9 +2,8 @@ import React from 'react'
 import {useState} from "react";
 import { FOLDER_ACTIONS } from '../pages/NotePage';
 import Note from './Note';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Card} from 'react-bootstrap';
 
-import { v4 as uuidv4 } from "uuid";
 
 
 
@@ -28,18 +27,21 @@ function expand(){
             <Col>
                 <h4>{folder.folderName}</h4>
             </Col>
-            <Col>
+            <Col style={{textAlign: 'right'}}>
             <button style={{display:display}} onClick={()=> minimize()} >Min</button>
             <button style={{display:altDisplay}} onClick={()=> expand()}>Expand</button>
             </Col>
         </Row>
+
+
+
+
+
         <div style={{display: display}}>
-        <Row>
-          <h5 className='other-note'>Notes</h5>
-      </Row>
-      
       <Row>
-        <Note key={uuidv4()} />
+        <Col>
+        <Note />
+        </Col>
       </Row>
       </div>
       
