@@ -25,7 +25,7 @@ function expand(){
     <Container>
         <Row> 
             <Col>
-                <h3 style={{marginTop:'1rem', background: '#212529', color: 'whitesmoke', paddingLeft:'1rem'}}>{folder.folderName}</h3>
+                <h3 style={{marginTop:'1rem', background: '#212529', color: 'whitesmoke', paddingLeft:'1rem', paddingTop: '1rem'}}>{folder.folderName}</h3>
             </Col>
             <Col style={{textAlign: 'right'}}>
 
