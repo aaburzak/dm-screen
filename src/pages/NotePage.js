@@ -38,9 +38,10 @@ function NotePage(){
 return(
   <Container>
     <Row>
-            <h3>Add Folder</h3>
+        <h1>Notes</h1>
             <Col>
-            <form className="name-form" onSubmit={handleSubmitFolder}>
+            <h5 style={{paddingLeft: '1rem'}}>Add Folder</h5>
+            <form style={{paddingLeft: '1rem'}} className="name-form" onSubmit={handleSubmitFolder}>
                     <input type="text" value={folderName} onChange={e => setFolderName
                     (e.target.value)} />
                 </form>

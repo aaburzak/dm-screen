@@ -2,8 +2,8 @@ import React from 'react'
 import {useState} from "react";
 import { FOLDER_ACTIONS } from '../pages/NotePage';
 import Note from './Note';
-import {Container, Row, Col, Card} from 'react-bootstrap';
-
+import {Container, Row, Col, Button} from 'react-bootstrap';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 
@@ -23,21 +23,23 @@ function expand(){
 
   return (
     <Container>
-        <Row>
+        <Row> 
             <Col>
-                <h4>{folder.folderName}</h4>
+                <h3 style={{marginTop:'1rem', background: '#212529', color: 'whitesmoke', paddingLeft:'1rem'}}>{folder.folderName}</h3>
             </Col>
             <Col style={{textAlign: 'right'}}>
-            <button style={{display:display}} onClick={()=> minimize()} >Min</button>
-            <button style={{display:altDisplay}} onClick={()=> expand()}>Expand</button>
+
+            <ButtonGroup style={{marginTop: '1rem'}} size="sm" variant='secondary'>
+        
+            <Button variant="secondary" style={{display:display}} onClick={()=> minimize()} ><b>&#8722;</b></Button>
+            <Button variant="secondary" style={{display:altDisplay}} onClick={()=> expand()}><b>&#43;</b></Button>
+            <Button variant="secondary" onClick={()=> dispatch({ type: FOLDER_ACTIONS.REMOVE_FOLDER, payload:{ id: folder.id }})}><b>&#215;</b> </Button>
+            </ButtonGroup>
             </Col>
         </Row>
 
 
-
-
-
-        <div style={{display: display}}>
+      <div style={{display: display, marginTop: '1 rem'}}>
       <Row>
         <Col>
         <Note />
@@ -45,11 +47,6 @@ function expand(){
       </Row>
       </div>
       
-      <Row>
-      <Col>
-      <button className ="remove-btn" onClick={()=> dispatch({ type: FOLDER_ACTIONS.REMOVE_FOLDER, payload:{ id: folder.id }})}>Remove Folder</button>
-      </Col>
-      </Row>
     </Container>
   )
 }

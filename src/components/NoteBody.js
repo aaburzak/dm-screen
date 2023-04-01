@@ -1,8 +1,7 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import CloseButton from 'react-bootstrap/CloseButton';
-import ListGroup from 'react-bootstrap/ListGroup'
-import Card from 'react-bootstrap/Card';
+
 
 import { NOTEACTIONS } from './Note';
 
@@ -13,11 +12,11 @@ export default function OtherNoteBody({note, dispatch}) {
               <Row>
                 <Col>
           
-            <div style={{textAlign: 'right'}}>
+            <div style={{paddingTop: '1rem',textAlign: 'right'}}>
             <CloseButton onClick={()=> dispatch({ type:NOTEACTIONS.REMOVE_NOTE, payload:{ id: note.id }})}></CloseButton>
             </div>
             <ul>
-              <li>
+              <li style={{paddingBottom: '1rem'}}>
               {note.text}
               </li>
             </ul> 
