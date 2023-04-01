@@ -5,6 +5,8 @@ import Character from "./Character";
 
 
 
+
+
 export const ACTIONS = {
     ADD_CHARACTER: 'add-character',
     ADD_HEALTH: 'add-health',
@@ -27,6 +29,7 @@ export const ACTIONS = {
     REMOVE_CHARACTER: 'remove-character',
     NEXT_CHARACTER: 'next-character',
   }
+  
 
   function reducer(characters, action){
     switch (action.type){
@@ -34,10 +37,11 @@ export const ACTIONS = {
             return[...characters, newCharacter(action.payload.name)]
 
         case ACTIONS.NEXT_CHARACTER:
-            characters.push(characters.shift());
-            
-            console.log(characters)
-            return [...characters]
+            let newLineup = [];
+          
+            newLineup = [...characters.slice(1), characters[0]]
+            console.log(newLineup)
+            return newLineup
         // case ACTIONS.ADD_HEALTH:
         //     return[...characters, newHealth(action.payload.health)]
 
@@ -198,10 +202,11 @@ function Tracker() {
                     (e.target.value)} />
                 </form>
             </Col>
+            
         </Row>
         <Row>
             <Col>
-            <button onClick={()=> dispatch({ type: ACTIONS.NEXT_CHARACTER })}>NEXT</button>
+            <button onClick={()=> dispatch({ type: ACTIONS.NEXT_CHARACTER })}>Next Turn</button>
             </Col>
         </Row>
 
