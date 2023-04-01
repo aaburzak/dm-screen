@@ -1,7 +1,7 @@
 import React from "react";
 import {Container, Row, Col} from 'react-bootstrap';
 import { useReducer, useState } from "react";
-
+import { v4 as uuidv4 } from "uuid";
 import NoteBody from "./NoteBody";
 
 
@@ -23,7 +23,7 @@ function reducer(notes, action){
 }
 
 function newNote(text){
-    return {id:Date.now(), text: text}
+    return {key:uuidv4(), id:Date.now(), text: text}
 }
 
 

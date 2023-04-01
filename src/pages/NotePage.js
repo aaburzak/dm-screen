@@ -22,7 +22,7 @@ function reducer(folders, action){
 }
 
 function newFolder(folderName){
-    return{ id:Date.now(), folderName: folderName}
+    return{ id:Date.now(), folderName: folderName }
 }
 
 function NotePage(){

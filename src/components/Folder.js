@@ -1,30 +1,52 @@
 import React from 'react'
+import {useState} from "react";
 import { FOLDER_ACTIONS } from '../pages/NotePage';
 import Note from './Note';
 import {Container, Row, Col} from 'react-bootstrap';
 
+import { v4 as uuidv4 } from "uuid";
+
+
+
 export default function Folder({folder, dispatch}) {
+  const [display, setDisplay] = useState('')
+  const [altDisplay, setAltDisplay] = useState('none')
+
+function minimize(){
+  setDisplay('none')
+  setAltDisplay('')
+}
+
+function expand(){
+  setDisplay('')
+  setAltDisplay('none')
+}
+
   return (
     <Container>
         <Row>
             <Col>
                 <h4>{folder.folderName}</h4>
             </Col>
+            <Col>
+            <button style={{display:display}} onClick={()=> minimize()} >Min</button>
+            <button style={{display:altDisplay}} onClick={()=> expand()}>Expand</button>
+            </Col>
         </Row>
+        <div style={{display: display}}>
         <Row>
           <h5 className='other-note'>Notes</h5>
       </Row>
       
       <Row>
-        <Note/>
+        <Note key={uuidv4()} />
       </Row>
-
-      <Row>
+      </div>
+      
       <Row>
       <Col>
       <button className ="remove-btn" onClick={()=> dispatch({ type: FOLDER_ACTIONS.REMOVE_FOLDER, payload:{ id: folder.id }})}>Remove Folder</button>
       </Col>
-      </Row>
       </Row>
     </Container>
   )
