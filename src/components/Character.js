@@ -64,7 +64,7 @@ const [health, setHealth] = useState(0)
       </Row>
 
       <Row>
-          <h5 className='other-note'>Other Notes</h5>
+          <h6 className='other-note'>Other Notes</h6>
       </Row>
       
       <Row>
