@@ -1,4 +1,6 @@
 import React from "react";
+
+// import { useLocalStorage } from 'react-use';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -26,6 +28,24 @@ function newNote(text){
     return {key:uuidv4(), id:Date.now(), text: text}
 }
 
+
+// const useStorage = (state, key) => {
+//     function saveState(key,val){
+//         return window.localStorage.set(key, JSON.stringify(val));
+//     }
+
+//     function getState(key) {
+//         return JSON.parse(window.localStorage.get(key))
+//     }
+
+//     const storedState = getState(key)
+
+//     useEffect(() => {
+//         saveState(key, state)
+//     }, [state])
+
+//     return storedState === null ? false : storedState;
+// }
 
 
 
