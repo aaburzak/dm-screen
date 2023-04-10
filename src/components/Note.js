@@ -5,6 +5,7 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 import { useReducer, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import NoteBody from "./NoteBody";
+import { useLocallyPersistedReducer } from "../hooks/ReducerStorage";
 
 
 
@@ -50,7 +51,7 @@ function newNote(text){
 
 
 export default function Note() {
-    const [notes, dispatch] = useReducer(reducer,[])
+    const [notes, dispatch] = useLocallyPersistedReducer(reducer,[], 'savedNotes')
     const [text, setText] = useState('')
 
     function handleSubmit(e) {
@@ -81,7 +82,7 @@ export default function Note() {
             
                       
         {notes.map(note => {
-                return <NoteBody key={note.id} note={note} dispatch={ dispatch }/>
+                return <NoteBody key={note.id} note={note}dispatch={ dispatch }/>
             })}
 
            

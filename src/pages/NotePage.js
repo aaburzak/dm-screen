@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 import {useReducer, useState} from "react";
 import Folder from "../components/Folder";
-// import Folder from "../components/Folder";
+import { useLocallyPersistedReducer } from "../hooks/ReducerStorage";
+
+
 
 export const FOLDER_ACTIONS ={
     ADD_FOLDER: 'add-folder',
@@ -26,7 +28,7 @@ function newFolder(folderName){
 }
 
 function NotePage(){
-    const [folders, dispatch] = useReducer(reducer, [])
+    const [folders, dispatch] = useLocallyPersistedReducer(reducer, [], 'savedFolders' )
     const [folderName, setFolderName] = useState('')
 
     function handleSubmitFolder(e) {
@@ -48,7 +50,7 @@ return(
             </Col>
         </Row>
             {folders.map(folder => {
-                return <Folder key={folder.id} folder ={folder} dispatch={ dispatch }/>
+                return <Folder key={folder.id} folder ={folder} folderName={ folderName } dispatch={ dispatch }/>
             })}
         
   </Container>   

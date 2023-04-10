@@ -7,6 +7,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 
+
 export default function Folder({folder, dispatch}) {
   const [display, setDisplay] = useState('')
   const [altDisplay, setAltDisplay] = useState('none')
