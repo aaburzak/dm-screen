@@ -41,7 +41,7 @@ function DamageLevelChart() {
               <td>18d10</td>
             </tr>
             <tr>
-              <td >1</td>
+              <td >17-20</td>
               <td>10d10</td>
               <td>18d10</td>
               <td>24d10</td>
