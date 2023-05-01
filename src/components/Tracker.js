@@ -223,7 +223,11 @@ function Tracker() {
       <Row className="justify-content-md-center">
         <Col className="md-auto text-center">
           <h5>Add Character</h5>
-          <form className="name-form" onSubmit={handleSubmit}>
+          <form
+            className="name-form"
+            placeholder="Character Name"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
               value={name}
