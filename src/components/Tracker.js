@@ -238,7 +238,7 @@ function Tracker() {
     setDisplay("");
   }
 
-  console.log(characters);
+  //   console.log(characters);
 
   return (
     <Container>

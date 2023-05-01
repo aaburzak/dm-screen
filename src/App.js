@@ -9,7 +9,7 @@ import CombatTracker from "./pages/CombatTracker";
 import NotePage from "./pages/NotePage";
 import SpellPage from "./pages/SpellPage";
 import TravelPage from "./pages/TravelPage";
-// import NotePageCopy from "./pages/NotePageCopy";
+import CalcPage from "./pages/CalcPage";
 
 function App() {
   return (
@@ -23,10 +23,7 @@ function App() {
             <Route path="/notes" element={<NotePage />} />
             <Route path="/travel" element={<TravelPage />} />
             <Route path="/spells" element={<SpellPage />} />
-            {/* <Route 
-                path="/notes2" 
-                element={<NotePageCopy />} 
-              /> */}
+            <Route path="/calculator" element={<CalcPage />} />
           </Routes>
         </div>
       </div>

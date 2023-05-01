@@ -1,31 +1,30 @@
 import React from "react";
 
-import { Container, Row, Col, Card, CloseButton } from "react-bootstrap";
+import { Card, CloseButton } from "react-bootstrap";
 
 import { ACTIONS } from "../actions";
 
 export default function OtherNote({ noteText, dispatch, id, characterId }) {
+  console.log(noteText);
   return (
-    <Container>
-      <Row>
-        <Card>
-          <Row>
-            <Col style={{ textAlign: "right", paddingTop: "1rem" }}>
-              <CloseButton
-                onClick={() =>
-                  dispatch({
-                    type: ACTIONS.REMOVE_NOTE,
-                    payload: { id, characterId },
-                  })
-                }
-              ></CloseButton>
-            </Col>
-          </Row>
-          <Row>
-            <Col>{noteText}</Col>
-          </Row>
+    <>
+      <div style={{ maxWidth: "min-content", marginTop: "1rem" }}>
+        <div style={{ textAlign: "right", color: "white" }}>
+          <CloseButton
+            variant="white"
+            onClick={() =>
+              dispatch({
+                type: ACTIONS.REMOVE_NOTE,
+                payload: { id, characterId },
+              })
+            }
+          ></CloseButton>
+        </div>
+
+        <Card style={{ color: "black" }} body>
+          {noteText}
         </Card>
-      </Row>
-    </Container>
+      </div>
+    </>
   );
 }
