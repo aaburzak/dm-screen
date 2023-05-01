@@ -4,7 +4,6 @@ import { FOLDER_ACTIONS } from "../actions";
 import Note from "./Note";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
-import { v4 as uuidv4 } from "uuid";
 
 export default function Folder({ folder, dispatch }) {
   const [display, setDisplay] = useState("");

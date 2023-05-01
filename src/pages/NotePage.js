@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useReducer, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
 
 import { useLocallyPersistedReducer } from "../hooks/ReducerStorage";
 

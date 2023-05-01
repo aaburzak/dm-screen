@@ -1,32 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useLocallyPersistedReducer } from "../hooks/ReducerStorage";
-import { useReducer, useState } from "react";
+import { useState } from "react";
 import Character from "./Character";
 import { ACTIONS } from "../actions";
-
-// export const ACTIONS = {
-//   ADD_CHARACTER: "add-character",
-//   ADD_HEALTH: "add-health",
-//   TOGGLE_DEATH: "toggle-death",
-//   TOGGLE_BLIND: "toggle-blind",
-//   TOGGLE_CHARMED: "toggle-charmed",
-//   TOGGLE_DEAF: "toggle-deaf",
-//   TOGGLE_FRIGHTENED: "toggle-frightened",
-//   TOGGLE_GRAPPLE: "toggle-grapple",
-//   TOGGLE_INCAPACITATED: "toggle-incapacitated",
-//   TOGGLE_INVISIBLE: "toggle-invisible",
-//   TOGGLE_PARALYZED: "toggle-paralyzed",
-//   TOGGLE_PETRIFIED: "toggle-petrified",
-//   TOGGLE_POISONED: "toggle-poisoned",
-//   TOGGLE_PRONE: "toggle-prone",
-//   TOGGLE_RESTRAINED: "toggle-restrained",
-//   TOGGLE_STUN: "toggle-stun",
-//   TOGGLE_UNCONSCIOUS: "toggle-unconscious",
-//   TOGGLE_CONCENTRATION: "toggle-concentration",
-//   REMOVE_CHARACTER: "remove-character",
-//   NEXT_CHARACTER: "next-character",
-// };
 
 function reducer(characters, action) {
   switch (action.type) {
@@ -39,8 +16,6 @@ function reducer(characters, action) {
       newLineup = [...characters.slice(1), characters[0]];
       console.log(newLineup);
       return newLineup;
-    // case ACTIONS.ADD_HEALTH:
-    //     return[...characters, newHealth(action.payload.health)]
 
     case ACTIONS.TOGGLE_DEATH:
       return characters.map((character) => {
