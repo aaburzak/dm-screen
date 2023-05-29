@@ -29,6 +29,10 @@ function Navigation() {
           <Nav.Link className="navOp" href="/notes">
             Notes
           </Nav.Link>
+
+          <Nav.Link className="navOp" href="/calculator">
+            Calculator
+          </Nav.Link>
         </Nav>
         )
       </Container>

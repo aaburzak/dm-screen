@@ -29,3 +29,11 @@ export const ACTIONS = {
   ADD_NOTE: "add-note",
   REMOVE_NOTE: "remove-note",
 };
+
+export const CALC_ACTIONS = {
+  ADD_DIGIT: "add-digit",
+  CHOOSE_OPERATION: "choose-operation",
+  CLEAR: "clear",
+  DELETE_DIGIT: "delete-digit",
+  EVALUATE: "evaluate",
+};
